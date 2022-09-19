@@ -1,0 +1,35 @@
+{
+  "name": "carnet-de-visite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "carnet-de-visite",
+  "author": "Tokenizers",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.5",
+    "dexie": "^3.2.2",
+    "gatsby": "^4.23.0",
+    "gatsby-plugin-google-analytics": "^4.23.0",
+    "gatsby-plugin-image": "^2.23.0",
+    "gatsby-plugin-sharp": "^4.23.0",
+    "gatsby-plugin-sitemap": "^5.23.0",
+    "gatsby-source-filesystem": "^4.23.0",
+    "gatsby-transformer-json": "^4.23.0",
+    "gatsby-transformer-sharp": "^4.23.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
