@@ -2,8 +2,9 @@ import { red } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
 // A custom theme for this app
+// https://bareynol.github.io/mui-theme-creator/
 const theme = createTheme({
-  palette: {
+  /*palette: {
     primary: {
       main: "#003986",
       transparent: `rgba(0, 57, 134, 0.7)`,
@@ -17,7 +18,7 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
-  },
+  },*/
 });
 
 export default theme;

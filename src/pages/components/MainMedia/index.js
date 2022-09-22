@@ -1,0 +1,1 @@
+export { MainMedia } from './MainMedia';

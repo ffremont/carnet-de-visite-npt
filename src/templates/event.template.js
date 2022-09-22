@@ -9,7 +9,7 @@ const EventTemplate = ({ pageContext }) => {
   return (
     <Grid container>
       <Grid item xs={12}>
-        <Typography>{event.title}</Typography>
+        <Typography>aa {event.title}</Typography>
       </Grid>
       <Grid item xs={12}>
         <Typography>

@@ -1,7 +1,6 @@
 {
   "name": "carnet-de-visite",
   "version": "1.0.0",
-  "private": true,
   "description": "carnet-de-visite",
   "author": "Tokenizers",
   "keywords": [
@@ -24,6 +23,7 @@
     "gatsby": "^4.23.0",
     "gatsby-plugin-google-analytics": "^4.23.0",
     "gatsby-plugin-image": "^2.23.0",
+    "gatsby-plugin-less": "^6.23.0",
     "gatsby-plugin-sharp": "^4.23.0",
     "gatsby-plugin-sitemap": "^5.23.0",
     "gatsby-source-filesystem": "^4.23.0",
@@ -31,5 +31,8 @@
     "gatsby-transformer-sharp": "^4.23.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
