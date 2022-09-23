@@ -1,10 +1,11 @@
 import { Card, CardHeader, CardMedia } from '@mui/material'
 import * as React from 'react'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { IconButton } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
-
-export const AnimationPack = ({ name, type, image, id }) => {
+export const Pack = ({ pack }) => {
+    const { type, title, image } = pack
     return (
         <Card>
             <CardHeader
@@ -13,14 +14,14 @@ export const AnimationPack = ({ name, type, image, id }) => {
                         <FavoriteIcon />
                     </IconButton>
                 }
-                title={name}
+                title={title}
                 subheader={type}
             />
-            <CardMedia
-                component="img"
-                height="194"
-                image={image}
-                alt={`image ${name}`}
+            <GatsbyImage
+                image={getImage(
+                    image.childImageSharp.gatsbyImageData
+                )}
+                alt={image.base}
             />
         </Card>
     )

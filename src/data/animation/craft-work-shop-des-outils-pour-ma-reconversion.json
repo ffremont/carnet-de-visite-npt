@@ -1,5 +1,7 @@
 {
-    "identifier": "metier-outils-pour-ma-reconversion",
+    "identifier": "craft-work-shop-des-outils-pour-ma-reconversion",
+    "slug": "metier-outils-pour-ma-reconversion",
+    "type": "craftWorkShop",
     "organization" : "Pôle emploi",
     "name":"Des outils pour ma reconversion",
     "logo": "icon.png",
@@ -10,7 +12,6 @@
         "label": "Portail pôle emploi",
         "href":"..."
     }],
-    "animations": ["cws-se-preparer"],
     "documents": [{
         "label": "Formulaire d'inscription",
         "href": "inscription.pdf"
