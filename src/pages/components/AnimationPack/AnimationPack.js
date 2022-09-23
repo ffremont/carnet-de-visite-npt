@@ -3,6 +3,7 @@ import * as React from 'react'
 import { IconButton } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
+
 export const AnimationPack = ({ name, type, image, id }) => {
     return (
         <Card>

@@ -1,6 +1,6 @@
 {
     "identifier": "metier-outils-pour-ma-reconversion",
-    "organisation" : "Pôle emploi",
+    "organization" : "Pôle emploi",
     "name":"Des outils pour ma reconversion",
     "logo": "logo.jpg",
     "image": "image.jpg",
@@ -8,11 +8,11 @@
     "slots" : "De 10h à 12h",
     "links": [{
         "label": "Portail pôle emploi",
-        "href: "..."
+        "href":"..."
     }],
     "documents": [{
         "label": "Formulaire d'inscription",
-        "href: "inscription.pdf"
+        "href": "inscription.pdf"
     }],
     "speakers":["camille-cohignac"]
 }
