@@ -21,6 +21,7 @@
     "@mui/material": "^5.10.5",
     "dexie": "^3.2.2",
     "gatsby": "^4.23.0",
+    "gatsby-plugin-gatsby-cloud": "^4.23.1",
     "gatsby-plugin-google-analytics": "^4.23.0",
     "gatsby-plugin-image": "^2.23.0",
     "gatsby-plugin-less": "^6.23.0",
