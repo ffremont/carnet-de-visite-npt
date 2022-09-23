@@ -1,8 +1,8 @@
 {
-
-    "identifier": "se-preparer",
+    "identifier": "cws-se-preparer",
     "title":"Se préparer",
+    "ressource": "craftWorkShop",
     "type": "Se former",
-    "image": "..jpg",
+    "image": "alltech.jpeg",
     "animations": ["metier-outils-pour-ma-reconversion"]
 }

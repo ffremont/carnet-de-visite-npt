@@ -2,14 +2,15 @@
     "identifier": "metier-outils-pour-ma-reconversion",
     "organization" : "Pôle emploi",
     "name":"Des outils pour ma reconversion",
-    "logo": "logo.jpg",
-    "image": "image.jpg",
+    "logo": "icon.png",
+    "image": "alltech.jpeg",
     "description": "blablabla",
     "slots" : "De 10h à 12h",
     "links": [{
         "label": "Portail pôle emploi",
         "href":"..."
     }],
+    "animations": ["cws-se-preparer"],
     "documents": [{
         "label": "Formulaire d'inscription",
         "href": "inscription.pdf"
