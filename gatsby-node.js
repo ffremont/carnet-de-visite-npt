@@ -13,6 +13,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File @link(by: "base")
       logo: File @link(by: "base")
     }
+
+    type SpeakerJson implements Node {
+        thumbnail: File @link(by: "base")
+    }
     `
     createTypes(typeDefs)
 }
