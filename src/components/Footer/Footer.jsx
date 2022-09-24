@@ -72,18 +72,22 @@ export const Footer = () => {
 
                     <Box sx={{ flexGrow: 1 }} />
                     <Hidden smDown>
-                        <Button
-                            color="secondary"
-                            variant="contained"
-                            startIcon={<Groups2Icon />}
-                        >
-                            Intervenant(e)s
-                        </Button>
+                        <Link to="/speakers">
+                            <Button
+                                color="secondary"
+                                variant="contained"
+                                startIcon={<Groups2Icon />}
+                            >
+                                Intervenant(e)s
+                            </Button>
+                        </Link>
                     </Hidden>
                     <Hidden smUp>
-                        <IconButton aria-label="favorites">
-                            <Groups2Icon />
-                        </IconButton>
+                        <Link to="/speakers">
+                            <IconButton aria-label="speakers">
+                                <Groups2Icon />
+                            </IconButton>
+                        </Link>
                     </Hidden>
                     <Hidden smDown>
                         <Link to="/favorites">
