@@ -8,7 +8,7 @@ const AnimationTemplate = ({ pageContext }) => {
   return (
     <Grid container>
       <Grid item xs={12}>
-        <Typography>aa {animation.name}</Typography>
+        <Typography>{animation.name}</Typography>
       </Grid>
       <Grid item xs={12}>
         <Typography>
