@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Footer } from "../components/Footer";
 
 const AnimationTemplate = ({ pageContext }) => {
   const { animation } = pageContext;
@@ -21,6 +22,7 @@ const AnimationTemplate = ({ pageContext }) => {
           alt={animation.image.base}
         />
       </Grid>
+      <Footer />
     </Grid>
   );
 };
