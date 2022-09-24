@@ -3,7 +3,7 @@ const CARNET_VISITE_STORE = 'CarnetVisiteStore';
 
 // localStorage isn't available in incognito mode. We need to detect it
 const testLocalStorage = () => {
-    if (typeof window === 'undefined' || window.localStorage == undefined) {
+    if (typeof window === 'undefined' || window.localStorage === undefined) {
         return false;
     }
 
@@ -64,7 +64,7 @@ export const localStorageStore = (
                     subscriptions[id].callback(undefined);
                 } else {
                     subscriptions[id].callback(
-                        value == null ? undefined : value
+                        value === null ? undefined : value
                     );
                 }
             }
@@ -90,7 +90,7 @@ export const localStorageStore = (
         getItem(key, defaultValue){
             const valueFromStorage = getStorage().getItem(`${prefix}.${key}`);
 
-            return valueFromStorage == null
+            return valueFromStorage === null
                 ? defaultValue
                 : tryParse(valueFromStorage);
         },
