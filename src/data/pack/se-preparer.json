@@ -1,7 +1,10 @@
 {
     "identifier": "se-preparer",
-    "title":"Se préparer",
+    "slug": "se-preparer",
+    "title": "Se préparer",
     "type": "Se former",
     "image": "alltech.jpeg",
-    "animations": ["craft-work-shop-des-outils-pour-ma-reconversion"]
+    "animations": [
+        "craft-work-shop-des-outils-pour-ma-reconversion"
+    ]
 }

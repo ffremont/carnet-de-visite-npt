@@ -7,7 +7,7 @@ import { PackList } from '../components/Pack'
 import { MoreArea } from '../components/MoreArea'
 import * as styles from './index.module.less'
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
     return (
         <Container maxWidth="sm" sx={{ marginBottom: '80px' }}>
             <Header

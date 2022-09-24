@@ -28,6 +28,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         return
     }
     await generateAnimations(createPage, allContent.data.animations.edges)
+    await generatePacks(createPage, allContent.data.packs.edges)
 }
 
 const fetchAnimationsRessources = async (graphql) =>
@@ -61,6 +62,34 @@ const fetchAnimationsRessources = async (graphql) =>
                     }
                 }
             }
+            packs: allPackJson {
+                edges {
+                    node {
+                        id
+                        identifier
+                        type
+                        title
+                        slug
+                        image {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
+                        animations {
+                            name
+                            organization
+                            slots
+                            slug
+                            identifier
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     `)
 
@@ -75,6 +104,21 @@ const generateAnimations = async (createPage, animations) => {
                 component: animationTemplate,
                 context: {
                     animation: animation.node,
+                },
+            })
+        })
+    )
+}
+
+const generatePacks = async (createPage, packs) => {
+    const packTemplate = path.resolve(`./src/templates/pack.template.js`)
+    return Promise.all(
+        packs.map((pack) => {
+            createPage({
+                path: `/packs/${kebabCase(pack.node.slug)}`,
+                component: packTemplate,
+                context: {
+                    pack: pack.node,
                 },
             })
         })

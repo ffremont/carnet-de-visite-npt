@@ -10,6 +10,7 @@ export const PackList = () => {
                     id
                     identifier
                     type
+                    slug
                     title
                     image {
                         childImageSharp {
