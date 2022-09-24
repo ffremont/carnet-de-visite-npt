@@ -16,6 +16,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import AddIcon from '@mui/icons-material/Add'
 import * as styles from './Footer.module.css'
 import { Container } from '@mui/system'
+import { Link } from 'gatsby'
 
 const StyledFab = styled(Fab)({
     position: 'absolute',
@@ -32,19 +33,22 @@ export const Footer = () => {
             <Container maxWidth="lg">
                 <Toolbar className={styles.toolbar}>
                     <Hidden smDown>
-                        {' '}
-                        <Button
-                            color="secondary"
-                            variant="contained"
-                            startIcon={<HomeIcon />}
-                        >
-                            Accueil
-                        </Button>
+                        <Link to="/">
+                            <Button
+                                color="secondary"
+                                variant="contained"
+                                startIcon={<HomeIcon />}
+                            >
+                                Accueil
+                            </Button>
+                        </Link>
                     </Hidden>
                     <Hidden smUp>
-                        <IconButton aria-label="accueil">
-                            <HomeIcon />
-                        </IconButton>
+                        <Link to="/">
+                            <IconButton aria-label="accueil">
+                                <HomeIcon />
+                            </IconButton>
+                        </Link>
                     </Hidden>
 
                     <Hidden smDown>
@@ -77,23 +81,27 @@ export const Footer = () => {
                         </Button>
                     </Hidden>
                     <Hidden smUp>
-                        <IconButton aria-label="accueil">
+                        <IconButton aria-label="favorites">
                             <Groups2Icon />
                         </IconButton>
                     </Hidden>
                     <Hidden smDown>
-                        <Button
-                            color="secondary"
-                            variant="contained"
-                            startIcon={<FavoriteIcon />}
-                        >
-                            Favoris
-                        </Button>
+                        <Link to="/favorites">
+                            <Button
+                                color="secondary"
+                                variant="contained"
+                                startIcon={<FavoriteIcon />}
+                            >
+                                Favoris
+                            </Button>
+                        </Link>
                     </Hidden>
                     <Hidden smUp>
-                        <IconButton aria-label="accueil">
-                            <FavoriteIcon />
-                        </IconButton>
+                        <Link to="/favorites">
+                            <IconButton aria-label="favorites">
+                                <FavoriteIcon />
+                            </IconButton>
+                        </Link>
                     </Hidden>
                 </Toolbar>
             </Container>
