@@ -1,21 +1,21 @@
-import * as React from 'react'
-import { Container } from '@mui/material'
-import { Footer } from '../components/Footer'
-import { SpeakerList } from '../components/Speakers'
-import { Header } from '../components/Header'
 
-const SpeakerPage = () => {
+import { Container } from '@mui/material'
+import * as React from 'react'
+import { Footer } from '../components/Footer'
+import { AnimationList } from '../components/Animation';
+import { Header } from '../components/Header';
+
+ const ProgrammationPage = () => {
     return (
         <Container maxWidth="sm" sx={{ marginBottom: '80px', marginTop:'60px' }}>
-             <Header
-                subTitle="Intervenants"
+            <Header
+                subTitle="Programmation"
                 title="Mon carnet de visite"
             />
 
-            <SpeakerList />
+            <AnimationList />
             <Footer />
         </Container>
     )
 }
-
-export default SpeakerPage
+export default ProgrammationPage;

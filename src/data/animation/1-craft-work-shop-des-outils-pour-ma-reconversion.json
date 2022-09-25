@@ -1,0 +1,20 @@
+{
+    "identifier": "1-craft-work-shop-des-outils-pour-ma-reconversion",
+    "slug": "metier-outils-pour-ma-reconversion",
+    "type": "craftWorkShop",
+    "organization" : "Pôle emploi",
+    "name":"Des outils pour ma reconversion",
+    "logo": "1-logo.jpeg",
+    "image": "alltech.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante scelerisque, pharetra sem quis, pulvinar urna. Suspendisse velit tellus, congue nec nunc id, ullamcorper tincidunt lorem. Vivamus vel venenatis felis. Aliquam sollicitudin arcu mi, sit amet semper ex semper vitae. In at eros eget ante auctor eleifend at viverra lacus. Aliquam congue a arcu in scelerisque. Nulla placerat nisi sagittis sagittis blandit. Vivamus massa orci, condimentum fermentum lacinia quis, pulvinar quis arcu. Cras lacinia, lacus nec mattis volutpat, nibh magna hendrerit nunc, sollicitudin varius ligula metus sed massa. Donec ornare non augue ac ullamcorper. Donec id leo ac dolor fringilla eleifend et suscipit nibh.",
+    "slots" : "De 10h à 12h",
+    "links": [{
+        "label": "Portail pôle emploi",
+        "href":"..."
+    }],
+    "documents": [{
+        "label": "Formulaire d'inscription",
+        "href": "inscription.pdf"
+    }],
+    "speakers":["camille-cohignac"]
+}

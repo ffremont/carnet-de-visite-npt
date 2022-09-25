@@ -5,7 +5,7 @@ import * as styles from './MainMedia.module.less'
 export const MainMedia = () => (
     <StaticImage
         className={styles.image}
-        src="../../../images/npt.jpg"
-        alt="Numérique pour toutess"
+        src="../../images/npt-banner.png"
+        alt="Numérique pour toutes"
     />
 )

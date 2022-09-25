@@ -1,0 +1,10 @@
+{
+    "identifier": "decouvrir-la-tech",
+    "slug": "decouvrir-la-tech",
+    "title": "Découvrir la tech",
+    "type": "Se lancer",
+    "image": "en-poste.jpg",
+    "animations": [
+        "craft-work-shop-des-outils-pour-ma-reconversion"
+    ]
+}
