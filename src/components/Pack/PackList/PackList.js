@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Pack } from '../Pack'
+import { Pack } from '../Pack/Pack'
+import * as styles from './PackList.module.less'
 
 export const PackList = () => {
     const { allPackJson } = useStaticQuery(graphql`
@@ -21,5 +22,5 @@ export const PackList = () => {
             }
         }
     `)
-    return allPackJson.nodes.map((node) => <Pack key={node.id} pack={node} />)
+    return allPackJson.nodes.map((node) => <Pack className={styles.pack}  key={node.id} pack={node} />)
 }

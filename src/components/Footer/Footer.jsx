@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { styled } from '@mui/material/styles'
+import QrIcon from '../../../assets/qr.svg';
 import {
     AppBar,
     Box,
@@ -13,7 +14,6 @@ import HomeIcon from '@mui/icons-material/Home'
 import TocIcon from '@mui/icons-material/Toc'
 import Groups2Icon from '@mui/icons-material/Groups2'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import AddIcon from '@mui/icons-material/Add'
 import * as styles from './Footer.module.css'
 import { Container } from '@mui/system'
 import { Link } from 'gatsby'
@@ -32,27 +32,32 @@ export const Footer = () => {
         <AppBar position="fixed" sx={{ top: 'auto', bottom: 0 }}>
             <Container maxWidth="lg">
                 <Toolbar className={styles.toolbar}>
-                    <Hidden smDown>
-                        <Link to="/">
-                            <Button
-                                color="secondary"
-                                variant="contained"
-                                startIcon={<HomeIcon />}
-                            >
-                                Accueil
-                            </Button>
-                        </Link>
+                    <Hidden mdDown>
+                        <Button
+                            component={Link}
+                            to="/"
+                            color="secondary"
+                            variant="contained"
+                            startIcon={<HomeIcon />}
+                        >
+                            Accueil
+                        </Button>
                     </Hidden>
-                    <Hidden smUp>
-                        <Link to="/">
-                            <IconButton aria-label="accueil">
-                                <HomeIcon />
-                            </IconButton>
-                        </Link>
+                    <Hidden mdUp>
+                        <IconButton
+                            component={Link}
+                            to="/"
+                            color="secondary"
+                            aria-label="accueil"
+                        >
+                            <HomeIcon />
+                        </IconButton>
                     </Hidden>
 
-                    <Hidden smDown>
+                    <Hidden mdDown>
                         <Button
+                            component={Link}
+                            to="/programmation"
                             color="secondary"
                             variant="contained"
                             startIcon={<TocIcon />}
@@ -60,52 +65,63 @@ export const Footer = () => {
                             Programme
                         </Button>
                     </Hidden>
-                    <Hidden smUp>
-                        <IconButton aria-label="accueil">
+                    <Hidden mdUp>
+                        <IconButton
+                            component={Link}
+                            to="/programmation"
+                            color="secondary"
+                            aria-label="animations"
+                        >
                             <TocIcon />
                         </IconButton>
                     </Hidden>
 
                     <StyledFab color="secondary" aria-label="add">
-                        <AddIcon />
+                        <QrIcon />
                     </StyledFab>
 
                     <Box sx={{ flexGrow: 1 }} />
-                    <Hidden smDown>
-                        <Link to="/speakers">
-                            <Button
-                                color="secondary"
-                                variant="contained"
-                                startIcon={<Groups2Icon />}
-                            >
-                                Intervenant(e)s
-                            </Button>
-                        </Link>
+                    <Hidden mdDown>
+                        <Button
+                            component={Link}
+                            to="/speakers"
+                            color="secondary"
+                            variant="contained"
+                            startIcon={<Groups2Icon />}
+                        >
+                            Intervenant(e)s
+                        </Button>
                     </Hidden>
-                    <Hidden smUp>
-                        <Link to="/speakers">
-                            <IconButton aria-label="speakers">
-                                <Groups2Icon />
-                            </IconButton>
-                        </Link>
+                    <Hidden mdUp>
+                        <IconButton
+                            component={Link}
+                            to="/speakers"
+                            color="secondary"
+                            aria-label="speakers"
+                        >
+                            <Groups2Icon />
+                        </IconButton>
                     </Hidden>
-                    <Hidden smDown>
-                        <Link to="/favorites">
-                            <Button
-                                color="secondary"
-                                variant="contained"
-                                startIcon={<FavoriteIcon />}
-                            >
-                                Favoris
-                            </Button>
-                        </Link>
+                    <Hidden mdDown>
+                        <Button
+                            component={Link}
+                            to="/favorites"
+                            color="secondary"
+                            variant="contained"
+                            startIcon={<FavoriteIcon />}
+                        >
+                            Favoris
+                        </Button>
                     </Hidden>
-                    <Hidden smUp>
-                        <Link to="/favorites">
-                            <IconButton aria-label="favorites">
-                                <FavoriteIcon />
-                            </IconButton>
-                        </Link>
+                    <Hidden mdUp>
+                        <IconButton
+                            component={Link}
+                            to="/favorites"
+                            color="secondary"
+                            aria-label="favorites"
+                        >
+                            <FavoriteIcon />
+                        </IconButton>
                     </Hidden>
                 </Toolbar>
             </Container>

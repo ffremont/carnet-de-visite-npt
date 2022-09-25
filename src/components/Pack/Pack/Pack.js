@@ -5,9 +5,10 @@ import { IconButton } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 import { Link } from 'gatsby'
-import { useStore } from '../../core/store'
+import { useStore } from '../../../core/store'
+import * as styles from './Pack.module.less'
 
-export const Pack = ({ pack }) => {
+export const Pack = ({ pack, className }) => {
     const { identifier, type, slug, title, image } = pack
 
     const [favorites, setFavorites] = useStore('favorites', [])
@@ -22,7 +23,7 @@ export const Pack = ({ pack }) => {
     }
 
     return (
-        <Card>
+        <Card className={className}>
             <CardHeader
                 action={
                     <IconButton
@@ -39,8 +40,9 @@ export const Pack = ({ pack }) => {
                 title={title}
                 subheader={type}
             />
-            <Link to={`/packs/${slug}`}>
+            <Link to={`/animations?pack=${type}`}>
                 <GatsbyImage
+                    className={styles.image} 
                     image={getImage(image.childImageSharp.gatsbyImageData)}
                     alt={image.base}
                 />
