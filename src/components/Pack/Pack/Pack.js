@@ -9,7 +9,7 @@ import { useStore } from '../../../core/store'
 import * as styles from './Pack.module.less'
 
 export const Pack = ({ pack, className }) => {
-    const { identifier, type, slug, title, image } = pack
+    const { identifier, type, title, image } = pack
 
     const [favorites, setFavorites] = useStore('favorites', [])
 
@@ -40,7 +40,7 @@ export const Pack = ({ pack, className }) => {
                 title={title}
                 subheader={type}
             />
-            <Link to={`/animations?pack=${type}`}>
+            <Link to={`/programmation?pack=${identifier}`}>
                 <GatsbyImage
                     className={styles.image} 
                     image={getImage(image.childImageSharp.gatsbyImageData)}

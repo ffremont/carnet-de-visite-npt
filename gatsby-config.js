@@ -33,6 +33,10 @@ module.exports = {
         preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
         web: [
           {
+            name:'Patrick Hand SC',
+            file:'https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap',
+          },
+          {
             name: `Fredoka One`,
             file: `https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap`,
           },

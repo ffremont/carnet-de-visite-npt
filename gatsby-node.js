@@ -46,6 +46,10 @@ const fetchAnimationsRessources = async (graphql) =>
                             href
                             label
                         }
+                        links {
+                            href
+                            label
+                        }
                         identifier
                         image {
                             childImageSharp {
@@ -59,10 +63,27 @@ const fetchAnimationsRessources = async (graphql) =>
                             }
                             base
                         }
+                        type
                         name
                         organization
                         slots
                         slug
+                        speakers {
+                            address
+                            lastname
+                            identifier
+                            firstname
+                            email
+                            organisation
+                            role
+                            website
+                            workPhone
+                            thumbnail {
+                                childImageSharp {
+                                  gatsbyImageData
+                                }
+                              }
+                        }                        
                     }
                 }
             }
