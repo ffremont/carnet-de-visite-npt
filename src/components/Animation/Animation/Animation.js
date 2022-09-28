@@ -6,16 +6,31 @@ import * as styles from './Animation.module.less'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { TYPES } from '../../../components/AppConstants'
+import { useStore } from '../../../core/store'
+import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 
 export const Animation = ({ animation }) => {
     const { description, slug, name, type, logo, slots } = animation
+    const [favorites, setFavorites] = useStore('favorites', [])
+
+    const changeFavorites = (identifier) => {
+        if (!favorites.includes(identifier)) {
+            setFavorites((oldVal) => [...oldVal, identifier])
+        } else {
+            setFavorites((oldVal) => oldVal.filter((el) => el !== identifier))
+        }
+    }
 
     return (
         <Paper className={styles.paper}>
-            <Avatar className={styles.favorite} aria-label="favorite">
-                <FavoriteIcon />
+            <Avatar onClick={() => changeFavorites(animation.identifier)} className={styles.favorite} aria-label="favorite">
+                {favorites.includes(animation.identifier) ? (
+                    <FavoriteIcon />
+                ) : (
+                    <FavoriteBorderOutlined />
+                )}
             </Avatar>
-            <Box sx={{display:'flex'}}>
+            <Box sx={{ display: 'flex' }}>
                 <Box
                     sx={{
                         width: '30%',

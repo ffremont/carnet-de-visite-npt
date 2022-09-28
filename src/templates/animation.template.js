@@ -23,16 +23,29 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import * as styles from './animation.module.less'
 import { TYPES } from '../components/AppConstants'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
+import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import PersonIcon from '@mui/icons-material/Person'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import DescriptionIcon from '@mui/icons-material/Description'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import { Link } from 'gatsby'
+import { useStore } from '../core/store'
+import { Footer } from '../components/Footer'
 
 const AnimationTemplate = ({ pageContext }) => {
     const { animation } = pageContext
-    console.log(animation)
+
+    const [favorites, setFavorites] = useStore('favorites', [])
+
+    const changeFavorites = (identifier) => {
+        if (!favorites.includes(identifier)) {
+            setFavorites((oldVal) => [...oldVal, identifier])
+        } else {
+            setFavorites((oldVal) => oldVal.filter((el) => el !== identifier))
+        }
+    }
+
     return (
         <Container disableGutters>
             <Fab
@@ -46,11 +59,16 @@ const AnimationTemplate = ({ pageContext }) => {
             </Fab>
 
             <Fab
+                onClick={() => changeFavorites(animation.identifier)}
                 className={styles.favorite}
                 size="medium"
                 aria-label="favorite"
             >
-                <FavoriteIcon />
+                {favorites.includes(animation.identifier) ? (
+                    <FavoriteIcon />
+                ) : (
+                    <FavoriteBorderOutlined />
+                )}
             </Fab>
             <GatsbyImage
                 className={styles.image}
@@ -168,7 +186,7 @@ const AnimationTemplate = ({ pageContext }) => {
                 <Card
                     sx={{
                         borderLeft: '2px solid #251e5b',
-                        marginTop:'20px'
+                        marginTop: '20px',
                     }}
                 >
                     <CardContent>
@@ -187,30 +205,30 @@ const AnimationTemplate = ({ pageContext }) => {
                         </Typography>
 
                         <List component="div" disablePadding>
-                                {animation.documents.map((doc) => (
-                                    <ListItemButton
-                                        disablePadding
-                                        sx={{ pl: 4 }}
-                                        component="a"
-                                        href={doc.href}
-                                        target="_blank"
-                                        noopener
-                                        noreferrer
-                                    >
-                                        <ListItemIcon>
-                                            <NavigateNextIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary={doc.label} />
-                                    </ListItemButton>
-                                ))}
-                            </List>
+                            {animation.documents.map((doc) => (
+                                <ListItemButton
+                                    disablePadding
+                                    sx={{ pl: 4 }}
+                                    component="a"
+                                    href={doc.href}
+                                    target="_blank"
+                                    noopener
+                                    noreferrer
+                                >
+                                    <ListItemIcon>
+                                        <NavigateNextIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary={doc.label} />
+                                </ListItemButton>
+                            ))}
+                        </List>
                     </CardContent>
                 </Card>
 
                 <Card
                     sx={{
                         borderLeft: '2px solid #251e5b',
-                        marginTop:'20px'
+                        marginTop: '20px',
                     }}
                 >
                     <CardContent>
@@ -229,26 +247,27 @@ const AnimationTemplate = ({ pageContext }) => {
                         </Typography>
 
                         <List component="div" disablePadding>
-                                {animation.links.map((doc) => (
-                                    <ListItemButton
-                                        disablePadding
-                                        sx={{ pl: 4 }}
-                                        component="a"
-                                        href={doc.href}
-                                        target="_blank"
-                                        noopener
-                                        noreferrer
-                                    >
-                                        <ListItemIcon>
-                                            <NavigateNextIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary={doc.label} />
-                                    </ListItemButton>
-                                ))}
-                            </List>
+                            {animation.links.map((doc) => (
+                                <ListItemButton
+                                    disablePadding
+                                    sx={{ pl: 4 }}
+                                    component="a"
+                                    href={doc.href}
+                                    target="_blank"
+                                    noopener
+                                    noreferrer
+                                >
+                                    <ListItemIcon>
+                                        <NavigateNextIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary={doc.label} />
+                                </ListItemButton>
+                            ))}
+                        </List>
                     </CardContent>
                 </Card>
             </Box>
+            <Footer />
         </Container>
     )
 }
