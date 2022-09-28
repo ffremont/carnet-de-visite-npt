@@ -12,9 +12,19 @@ import {
     ListItemText,
     Typography,
 } from '@mui/material'
-import PolicyIcon from '@mui/icons-material/Policy';
+import PolicyIcon from '@mui/icons-material/Policy'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import { TYPES } from '../AppConstants'
 
 export const MoreArea = ({ className }) => {
+    const { allTypes } = useStaticQuery(graphql`
+        query allTypes {
+            allTypes: allAnimationJson {
+                distinct(field: type)
+            }
+        }
+    `)
+
     return (
         <>
             <Card className={className}>
@@ -31,9 +41,9 @@ export const MoreArea = ({ className }) => {
                             aria-label="vertical contained button group"
                             variant="outlined"
                         >
-                            <Button key="conf">Conférences</Button>
-                            <Button key="metier">Ateliers Métier</Button>
-                            <Button key="pratique">Ateliers Pratique</Button>
+                            {allTypes.distinct.map((type) => (
+                                <Button component={Link} to={`/programmation?type=${type}`} key={type}>{TYPES[type]}</Button>
+                            ))}
                         </ButtonGroup>
                     </Box>
                 </CardContent>
