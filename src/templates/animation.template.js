@@ -30,13 +30,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import DescriptionIcon from '@mui/icons-material/Description'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import { Link } from 'gatsby'
-<<<<<<< HEAD
 import { useStore } from '../core/store'
-=======
-import { Speaker } from '../components/Speakers'
-import { useStore } from '../core/store'
-import { FavoriteBorderOutlined } from '@mui/icons-material'
->>>>>>> 7015972 (chore: fix build)
 import { Footer } from '../components/Footer'
 
 const AnimationTemplate = ({ pageContext }) => {
