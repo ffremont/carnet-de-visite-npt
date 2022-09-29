@@ -23,6 +23,9 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import DescriptionIcon from '@mui/icons-material/Description'
 import { Link } from 'gatsby'
 import { Speaker } from '../components/Speakers'
+import { useStore } from '../core/store'
+import { FavoriteBorderOutlined } from '@mui/icons-material'
+import { Footer } from '../components/Footer'
 
 const AnimationTemplate = ({ pageContext }) => {
     const { animation } = pageContext
