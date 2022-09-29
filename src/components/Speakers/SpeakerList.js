@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Speaker } from './Speaker'
+import { Speaker } from './index'
 
 export const SpeakerList = () => {
     const { allSpeakerJson } = useStaticQuery(graphql`

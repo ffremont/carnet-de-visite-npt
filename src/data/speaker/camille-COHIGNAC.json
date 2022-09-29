@@ -1,12 +1,12 @@
 {
     "identifier": "camille-cohignac",
-    "organisation": "",
+    "organisation": "Freelance",
     "role": "Ux/Ui en freelance",
     "thumbnail": "camille-cohignac.jpg",
-    "email": "aa@aa.fr",
+    "email": "exemple@gmail.fr",
     "firstname": "Camille",
     "lastname":"COHIGNAC",
-    "address": "...",
-    "website": "...",
+    "address": " 1 rue de la terre 79000 Niort",
+    "website": "https://blog-espritdesign.com/",
     "workPhone": "06060660"
 }
