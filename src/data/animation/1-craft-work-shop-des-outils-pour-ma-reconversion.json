@@ -4,8 +4,8 @@
     "type": "craftWorkShop",
     "organization": "Mission Locale",
     "name": "Comment valoriser mes compétences transférables",
-    "logo": "1-logo.png",
-    "image": "1-image.jpeg",
+    "logo": "metier-outils-pour-ma-reconversion/1-logo.png",
+    "image": "metier-outils-pour-ma-reconversion/1-image.jpeg",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante scelerisque, pharetra sem quis, pulvinar urna. Suspendisse velit tellus, congue nec nunc id, ullamcorper tincidunt lorem. Vivamus vel venenatis felis. Aliquam sollicitudin arcu mi, sit amet semper ex semper vitae. In at eros eget ante auctor eleifend at viverra lacus. Aliquam congue a arcu in scelerisque. Nulla placerat nisi sagittis sagittis blandit. Vivamus massa orci, condimentum fermentum lacinia quis, pulvinar quis arcu. Cras lacinia, lacus nec mattis volutpat, nibh magna hendrerit nunc, sollicitudin varius ligula metus sed massa. Donec ornare non augue ac ullamcorper. Donec id leo ac dolor fringilla eleifend et suscipit nibh.",
     "slots": "15h45 - 16h30",
     "links": [
@@ -17,7 +17,7 @@
     "documents": [
         {
             "label": "Formulaire d'inscription",
-            "href": "1-formulaire-sinscription.pdf"
+            "href": "1-formulaire-inscription.pdf"
         }
     ],
     "speakers": ["camille-cohignac"]

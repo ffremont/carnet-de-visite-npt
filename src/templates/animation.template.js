@@ -1,21 +1,15 @@
 import React from 'react'
 import {
-    Avatar,
     Box,
     Card,
     CardContent,
     Chip,
     Container,
     Fab,
-    IconButton,
     List,
-    ListItem,
-    ListItemAvatar,
     ListItemButton,
     ListItemIcon,
     ListItemText,
-    ListSubheader,
-    Paper,
     Typography,
 } from '@mui/material'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
@@ -23,14 +17,14 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import * as styles from './animation.module.less'
 import { TYPES } from '../components/AppConstants'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import PersonIcon from '@mui/icons-material/Person'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import DescriptionIcon from '@mui/icons-material/Description'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import { Link } from 'gatsby'
+import { Speaker } from '../components/Speakers'
 import { useStore } from '../core/store'
+import { FavoriteBorderOutlined } from '@mui/icons-material'
 import { Footer } from '../components/Footer'
 
 const AnimationTemplate = ({ pageContext }) => {
@@ -133,52 +127,12 @@ const AnimationTemplate = ({ pageContext }) => {
                             <PersonIcon /> Intervenant(e)s
                         </Typography>
 
+                        
+
                         {animation.speakers.length > 0 && (
-                            <List
-                                sx={{
-                                    width: '100%',
-                                    bgcolor: 'background.paper',
-                                }}
-                            >
-                                {animation.speakers.map((speaker) => (
-                                    <ListItem
-                                        alignItems="flex-start"
-                                        secondaryAction={
-                                            <IconButton
-                                                edge="end"
-                                                aria-label="intervenantes"
-                                            >
-                                                <ArrowForwardIosIcon />
-                                            </IconButton>
-                                        }
-                                    >
-                                        <ListItemAvatar>
-                                            <Avatar
-                                                alt="Remy Sharp"
-                                                src="/static/images/avatar/1.jpg"
-                                            />
-                                        </ListItemAvatar>
-                                        <ListItemText
-                                            primary={`${speaker.firstname} ${speaker.lastname}`}
-                                            secondary={
-                                                <React.Fragment>
-                                                    <Typography
-                                                        sx={{
-                                                            display: 'inline',
-                                                        }}
-                                                        component="span"
-                                                        variant="body2"
-                                                        color="text.primary"
-                                                    >
-                                                        {speaker.organisation}
-                                                    </Typography>
-                                                    {speaker.role}
-                                                </React.Fragment>
-                                            }
-                                        />
-                                    </ListItem>
-                                ))}
-                            </List>
+                            animation.speakers.map((speaker) => (
+                                <Speaker key={speaker.id} speaker={speaker}/>
+                            ))
                         )}
                     </CardContent>
                 </Card>
@@ -210,7 +164,7 @@ const AnimationTemplate = ({ pageContext }) => {
                                     disablePadding
                                     sx={{ pl: 4 }}
                                     component="a"
-                                    href={doc.href}
+                                    href={`/${animation.slug}/${doc.href}`}
                                     target="_blank"
                                     noopener
                                     noreferrer

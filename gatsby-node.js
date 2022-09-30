@@ -10,8 +10,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type AnimationJson implements Node {
       speakers: [SpeakerJson] @link(by: "identifier")
-      image: File @link(by: "base")
-      logo: File @link(by: "base")
+      image: File @link(by: "relativePath")
+      logo: File @link(by: "relativePath")
     }
 
     type SpeakerJson implements Node {
@@ -80,7 +80,7 @@ const fetchAnimationsRessources = async (graphql) =>
                             workPhone
                             thumbnail {
                                 childImageSharp {
-                                  gatsbyImageData
+                                    gatsbyImageData(height: 194)
                                 }
                               }
                         }                        
