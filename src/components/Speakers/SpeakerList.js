@@ -8,6 +8,7 @@ export const SpeakerList = () => {
             allSpeakerJson {
                 nodes {
                     address
+                    identifier
                     firstname
                     email
                     organisation
