@@ -3,86 +3,128 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Pack } from '../Pack'
 import { useStore } from '../../core/store'
 import { Animation } from '../Animation'
+import { Speaker } from '../Speakers'
+import { Box } from '@mui/material'
 
 export const FavoriteList = () => {
     const [favorites] = useStore('favorites', [])
 
-    const { allPackJson, allAnimationJson } = useStaticQuery(graphql`
-        query AllPackQuery {
-            allPackJson {
-                nodes {
-                    id
-                    identifier
-                    type
-                    internal {
-                        type
+    const { allPackJson, allAnimationJson, allSpeakerJson } =
+        useStaticQuery(graphql`
+            query AllPackQuery {
+                allSpeakerJson {
+                    nodes {
+                        address
+                        internal {
+                            type
+                        }
+                        identifier
+                        firstname
+                        email
+                        organisation
+                        lastname
+                        role
+                        website
+                        workPhone
+                        thumbnail {
+                            childImageSharp {
+                                gatsbyImageData(height: 194)
+                            }
+                        }
+                        id
                     }
-                    slug
-                    title
-                    image {
-                        childImageSharp {
-                            gatsbyImageData(height: 194)
+                }
+
+                allPackJson {
+                    nodes {
+                        id
+                        identifier
+                        type
+                        internal {
+                            type
+                        }
+                        slug
+                        title
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(height: 194)
+                            }
                         }
                     }
                 }
-            }
 
-            allAnimationJson {
-                nodes {
-                    identifier
-                    name
-                    organization
-                    slots
-                    slug
-                    type
-                    internal {
+                allAnimationJson {
+                    nodes {
+                        identifier
+                        name
+                        organization
+                        slots
+                        slug
                         type
-                    }
-                    speakers {
-                        email
-                        firstname
-                        lastname
-                        organisation
-                        role
-                        address
-                        thumbnail {
+                        internal {
+                            type
+                        }
+                        speakers {
+                            email
+                            firstname
+                            lastname
+                            organisation
+                            role
+                            address
+                            thumbnail {
+                                childImageSharp {
+                                    gatsbyImageData
+                                }
+                            }
+                        }
+                        description
+                        logo {
                             childImageSharp {
                                 gatsbyImageData
                             }
                         }
-                    }
-                    description
-                    logo {
-                        childImageSharp {
-                            gatsbyImageData
+                        links {
+                            href
+                            label
                         }
-                    }
-                    links {
-                        href
-                        label
-                    }
-                    image {
-                        childImageSharp {
-                            gatsbyImageData
+                        image {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
                         }
+                        id
                     }
-                    id
                 }
             }
-        }
-    `)
+        `)
 
-    const favoriteList = [...allPackJson.nodes, ...allAnimationJson.nodes]
+    const favoriteList = [
+        ...allPackJson.nodes,
+        ...allSpeakerJson.nodes,
+        ...allAnimationJson.nodes,
+    ]
     const userFavorites = favoriteList.filter((pack) =>
         favorites.includes(pack.identifier)
     )
 
-    return userFavorites.map((favorite) => {
-        if (favorite.internal.type === 'PackJson') {
-            return <Pack key={favorite.id} pack={favorite} />
-        } else if (favorite.internal.type === 'AnimationJson') {
-            return <Animation key={favorite.id} animation={favorite} />
-        }
-        return
-    })
+    console.log(userFavorites)
+    return (
+        <Box sx={{
+            display:'flex',
+            gap: '10px',
+            flexDirection: 'column',
+            margin: '20px 0'
+        }}>
+            {userFavorites.map((favorite) => {
+                if (favorite.internal.type === 'PackJson') {
+                    return <Pack key={favorite.id} pack={favorite} />
+                } else if (favorite.internal.type === 'AnimationJson') {
+                    return <Animation key={favorite.id} animation={favorite} />
+                } else if (favorite.internal.type === 'SpeakerJson') {
+                    return <Speaker key={favorite.id} speaker={favorite} />
+                }
+                return
+            })}
+        </Box>
+    )
 }

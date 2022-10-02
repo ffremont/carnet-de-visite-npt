@@ -21,7 +21,7 @@ import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import PersonIcon from '@mui/icons-material/Person'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import DescriptionIcon from '@mui/icons-material/Description'
-import { Link } from 'gatsby'
+import { navigate } from "gatsby";
 import { Speaker } from '../components/Speakers'
 import { useStore } from '../core/store'
 import { FavoriteBorderOutlined } from '@mui/icons-material'
@@ -43,8 +43,7 @@ const AnimationTemplate = ({ pageContext }) => {
     return (
         <Container disableGutters>
             <Fab
-                component={Link}
-                to="/"
+                onClick={() => navigate(-1)}
                 className={styles.back}
                 size="medium"
                 aria-label="retour"

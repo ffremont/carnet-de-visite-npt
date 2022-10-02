@@ -1,7 +1,7 @@
-import { Avatar, Box, Chip, IconButton, Paper, Typography } from '@mui/material'
+import { Avatar, Box, Chip, IconButton, Paper, Typography, useMediaQuery } from '@mui/material'
 import { Link } from 'gatsby'
 import * as React from 'react'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import SearchIcon from '@mui/icons-material/Search'
 import * as styles from './Animation.module.less'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import FavoriteIcon from '@mui/icons-material/Favorite'
@@ -12,6 +12,7 @@ import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 export const Animation = ({ animation }) => {
     const { description, slug, name, type, logo, slots } = animation
     const [favorites, setFavorites] = useStore('favorites', [])
+    const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
     const changeFavorites = (identifier) => {
         if (!favorites.includes(identifier)) {
@@ -23,17 +24,10 @@ export const Animation = ({ animation }) => {
 
     return (
         <Paper className={styles.paper}>
-            <Avatar onClick={() => changeFavorites(animation.identifier)} className={styles.favorite} aria-label="favorite">
-                {favorites.includes(animation.identifier) ? (
-                    <FavoriteIcon />
-                ) : (
-                    <FavoriteBorderOutlined />
-                )}
-            </Avatar>
-            <Box sx={{ display: 'flex' }}>
+            <Box sx={{ display: 'flex', flexDirection: matches ? 'column': 'row' }}>
                 <Box
                     sx={{
-                        width: '30%',
+                        width: matches ? '100%': '30%',
                         maxWidth: '400px',
                         display: 'flex',
                         alignItems: 'center',
@@ -61,12 +55,12 @@ export const Animation = ({ animation }) => {
                             ? description.substr(0, 60) + '...'
                             : description}
                     </Typography>
-                    <Link to={`/animations/${slug}`}>
+                    {/*<Link to={`/animations/${slug}`}>
                         Lire tout{' '}
                         <span className={styles.readArrow}>
                             <ArrowForwardIosIcon />
                         </span>
-                    </Link>
+                        </Link>*/}
                     <Box
                         sx={{
                             display: 'flex',
@@ -85,6 +79,36 @@ export const Animation = ({ animation }) => {
                             color="primary"
                         />
                     </Box>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignContent: 'center',
+                        justifyContent: 'center',
+                        flexDirection: matches ? 'row': 'colum'
+                    }}
+                >
+                    <IconButton
+                    sx={{flex:1}}
+                        onClick={() => changeFavorites(animation.identifier)}
+                        aria-label="mettre en favori"
+                    >
+                        {favorites.includes(animation.identifier) ? (
+                            <FavoriteIcon />
+                        ) : (
+                            <FavoriteBorderOutlined />
+                        )}
+                    </IconButton>
+
+                    <IconButton
+                    sx={{flex:1}}
+                        component={Link}
+                        to={`/animations/${slug}`}
+                        onClick={() => changeFavorites(animation.identifier)}
+                        aria-label="voir"
+                    >
+                        <SearchIcon />
+                    </IconButton>
                 </Box>
             </Box>
         </Paper>

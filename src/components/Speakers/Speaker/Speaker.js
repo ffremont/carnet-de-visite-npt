@@ -1,13 +1,16 @@
 import * as React from 'react'
-import { Box, Chip, IconButton, Paper, Typography } from '@mui/material'
+import { Box, Chip, IconButton, Paper, Typography, useMediaQuery } from '@mui/material'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 import * as styles from './Speaker.module.less'
 import FileDownloadIcon from '@mui/icons-material/FileDownload'
+import { useStore } from '../../../core/store'
 
 export const Speaker = ({ speaker }) => {
     const {
         address,
+        identifier,
         firstname,
         organisation,
         lastname,
@@ -17,19 +20,30 @@ export const Speaker = ({ speaker }) => {
         email,
         thumbnail,
     } = speaker
+
+    const [favorites, setFavorites] = useStore('favorites', [])
+    const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+    const changeFavorites = (identifier) => {
+        if (!favorites.includes(identifier)) {
+            setFavorites((oldVal) => [...oldVal, identifier])
+        } else {
+            setFavorites((oldVal) => oldVal.filter((el) => el !== identifier))
+        }
+    }
+
     return (
         <Paper className={styles.paper}>
-            <Box sx={{ display: 'flex' }}>
+            <Box sx={{ display: 'flex', flexDirection: matches ? 'column': 'row' }}>
                 <Box
                     sx={{
-                        width: '30%',
+                        width: matches ? '100%': '30%',
                         maxWidth: '400px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                     }}
                 >
-                   
                     <GatsbyImage
                         className={styles.image}
                         image={getImage(
@@ -48,7 +62,6 @@ export const Speaker = ({ speaker }) => {
                 >
                     <Typography variant="h6">
                         {firstname} {lastname}
-                        
                     </Typography>
 
                     <address>
@@ -88,21 +101,32 @@ export const Speaker = ({ speaker }) => {
                 </Box>
                 <Box
                     sx={{
-                        width: '50px',
+                        width: matches ? '100%': '50px',
                         display: 'flex',
-                        flexDirection: 'column',
+                        flexDirection: matches ? 'row': 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
                     }}
                 >
-                     <IconButton sx={{flex:1}} aria-label="favorite" size="large">
-                        <FavoriteIcon />
+                    <IconButton
+                        onClick={() => changeFavorites(identifier)}
+                        sx={{ flex: 1 }}
+                        aria-label="favorite"
+                        size="large"
+                    >
+                        {favorites.includes(identifier) ? (
+                            <FavoriteIcon />
+                        ) : (
+                            <FavoriteBorderOutlined />
+                        )}
                     </IconButton>
-                    <IconButton sx={{flex:1}} aria-label="download vCard" size="large">
+                    <IconButton
+                        sx={{ flex: 1 }}
+                        aria-label="download vCard"
+                        size="large"
+                    >
                         <FileDownloadIcon />
                     </IconButton>
-
-                   
                 </Box>
             </Box>
         </Paper>
