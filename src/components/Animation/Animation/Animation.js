@@ -1,4 +1,12 @@
-import { Avatar, Box, Chip, IconButton, Paper, Typography, useMediaQuery } from '@mui/material'
+import {
+    Avatar,
+    Box,
+    Chip,
+    IconButton,
+    Paper,
+    Typography,
+    useMediaQuery,
+} from '@mui/material'
 import { Link } from 'gatsby'
 import * as React from 'react'
 import SearchIcon from '@mui/icons-material/Search'
@@ -12,7 +20,7 @@ import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 export const Animation = ({ animation }) => {
     const { description, slug, name, type, logo, slots } = animation
     const [favorites, setFavorites] = useStore('favorites', [])
-    const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+    const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'))
 
     const changeFavorites = (identifier) => {
         if (!favorites.includes(identifier)) {
@@ -24,10 +32,15 @@ export const Animation = ({ animation }) => {
 
     return (
         <Paper className={styles.paper}>
-            <Box sx={{ display: 'flex', flexDirection: matches ? 'column': 'row' }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: matches ? 'column' : 'row',
+                }}
+            >
                 <Box
                     sx={{
-                        width: matches ? '100%': '30%',
+                        width: matches ? '100%' : '30%',
                         maxWidth: '400px',
                         display: 'flex',
                         alignItems: 'center',
@@ -85,11 +98,12 @@ export const Animation = ({ animation }) => {
                         display: 'flex',
                         alignContent: 'center',
                         justifyContent: 'center',
-                        flexDirection: matches ? 'row': 'colum'
+                        flexDirection: matches ? 'row' : 'colum',
                     }}
                 >
                     <IconButton
-                    sx={{flex:1}}
+                        sx={{ flex: 1 }}
+                        className={styles.iconButtonMobile}
                         onClick={() => changeFavorites(animation.identifier)}
                         aria-label="mettre en favori"
                     >
@@ -101,7 +115,8 @@ export const Animation = ({ animation }) => {
                     </IconButton>
 
                     <IconButton
-                    sx={{flex:1}}
+                        sx={{ flex: 1 }}
+                        className={styles.iconButtonMobile}
                         component={Link}
                         to={`/animations/${slug}`}
                         onClick={() => changeFavorites(animation.identifier)}
