@@ -1,10 +1,18 @@
 import * as React from 'react'
-import { Box, Chip, IconButton, Paper, Typography, useMediaQuery } from '@mui/material'
+import {
+    Box,
+    Chip,
+    IconButton,
+    Paper,
+    Typography,
+    useMediaQuery,
+} from '@mui/material'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 import * as styles from './Speaker.module.less'
 import FileDownloadIcon from '@mui/icons-material/FileDownload'
+import VCard from 'vcard-creator'
 import { useStore } from '../../../core/store'
 
 export const Speaker = ({ speaker }) => {
@@ -22,7 +30,22 @@ export const Speaker = ({ speaker }) => {
     } = speaker
 
     const [favorites, setFavorites] = useStore('favorites', [])
-    const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+    const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'))
+
+    const [vcard, setVcard] = React.useState('')
+
+    React.useEffect(() => {
+        const myVCard = new VCard('vcard')
+        myVCard
+            .addName(lastname, firstname)
+            .addCompany(organisation)
+            .addRole(role)
+            .addEmail(email)
+            .addPhoneNumber(workPhone, 'WORK')
+            .addURL(website)
+
+        setVcard(`${myVCard.buildVCard()}`)
+    }, [speaker])
 
     const changeFavorites = (identifier) => {
         if (!favorites.includes(identifier)) {
@@ -34,10 +57,15 @@ export const Speaker = ({ speaker }) => {
 
     return (
         <Paper className={styles.paper}>
-            <Box sx={{ display: 'flex', flexDirection: matches ? 'column': 'row' }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: matches ? 'column' : 'row',
+                }}
+            >
                 <Box
                     sx={{
-                        width: matches ? '100%': '30%',
+                        width: matches ? '100%' : '30%',
                         maxWidth: '400px',
                         display: 'flex',
                         alignItems: 'center',
@@ -101,9 +129,9 @@ export const Speaker = ({ speaker }) => {
                 </Box>
                 <Box
                     sx={{
-                        width: matches ? '100%': '50px',
+                        width: matches ? '100%' : '50px',
                         display: 'flex',
-                        flexDirection: matches ? 'row': 'column',
+                        flexDirection: matches ? 'row' : 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
                     }}
@@ -111,8 +139,8 @@ export const Speaker = ({ speaker }) => {
                     <IconButton
                         onClick={() => changeFavorites(identifier)}
                         sx={{ flex: 1 }}
+                        className={styles.iconButtonMobile}
                         aria-label="favorite"
-                        size="large"
                     >
                         {favorites.includes(identifier) ? (
                             <FavoriteIcon />
@@ -123,7 +151,10 @@ export const Speaker = ({ speaker }) => {
                     <IconButton
                         sx={{ flex: 1 }}
                         aria-label="download vCard"
-                        size="large"
+                        onClick={() => {}}
+                        className={styles.iconButtonMobile}
+                        download={`${firstname}-${lastname}-carte-de-visite.vcf`}
+                        href={`data:text/vcard,${vcard}`}
                     >
                         <FileDownloadIcon />
                     </IconButton>
