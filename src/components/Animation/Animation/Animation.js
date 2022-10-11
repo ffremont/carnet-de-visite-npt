@@ -20,7 +20,7 @@ import { useStore } from '../../../core/store'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 
 export const Animation = ({ animation }) => {
-    const { description, slug, name, type, logo, slots, registrationUrl } =
+    const { description, slug, name, type, logo, slots, registrationUrl , floor, room} =
         animation
 
     const [favorites, setFavorites] = useStore('favorites', [])
@@ -37,18 +37,17 @@ export const Animation = ({ animation }) => {
     return (
         <Paper className={styles.paper}>
             <Box
-            className={!!registrationUrl ? styles.registrationBox : ''}
+                className={!!registrationUrl ? styles.registrationBox : ''}
                 sx={{
                     display: 'flex',
                     flexDirection: matches ? 'column' : 'row',
                 }}
             >
                 <Box
-                
                     sx={{
                         width: matches ? '100%' : '30%',
                         maxWidth: '350px',
-                        padding:'15px',
+                        padding: '15px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -72,6 +71,9 @@ export const Animation = ({ animation }) => {
                     }}
                 >
                     <Typography variant="h6" gutterBottom>
+                        <span className={styles.etageChip}>
+                         {floor}{floor > 1 ? 'ème': 'er'}, salle {room}
+                        </span>
                         {name}
                     </Typography>
                     <Typography variant="body1" gutterBottom>
@@ -89,15 +91,17 @@ export const Animation = ({ animation }) => {
                         sx={{
                             display: 'flex',
                             gap: '3px',
-                            flexWrap: 'wrap'
+                            flexWrap: 'wrap',
                         }}
                     >
-                        {!!registrationUrl && <Chip
-                            size="small"
-                            icon={<FactCheckIcon />}
-                            label="S'inscrire"
-                            className="registrationChip"
-                        />}
+                        {!!registrationUrl && (
+                            <Chip
+                                size="small"
+                                icon={<FactCheckIcon />}
+                                label="S'inscrire"
+                                className="registrationChip"
+                            />
+                        )}
                         <Chip
                             size="small"
                             label={TYPES[type]}
@@ -133,16 +137,18 @@ export const Animation = ({ animation }) => {
                         )}
                     </IconButton>
 
-                    {!!registrationUrl && <IconButton
-                        sx={{ flex: 1 }}
-                        rel="noopener noreferrer"
-                        className={styles.iconButtonMobile}
-                        component={Link}
-                        to={registrationUrl}
-                        aria-label="s'inscrire"
-                    >
-                        <FactCheckIcon />
-                    </IconButton>}
+                    {!!registrationUrl && (
+                        <IconButton
+                            sx={{ flex: 1 }}
+                            rel="noopener noreferrer"
+                            className={styles.iconButtonMobile}
+                            component={Link}
+                            to={registrationUrl}
+                            aria-label="s'inscrire"
+                        >
+                            <FactCheckIcon />
+                        </IconButton>
+                    )}
 
                     <IconButton
                         sx={{ flex: 1 }}
@@ -153,8 +159,6 @@ export const Animation = ({ animation }) => {
                     >
                         <SearchIcon />
                     </IconButton>
-
-                   
                 </Box>
             </Box>
         </Paper>

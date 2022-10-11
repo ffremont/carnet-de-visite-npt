@@ -30,6 +30,8 @@ export const AnimationList = () => {
                     slots
                     slug
                     type
+                    floor
+                    room
                     registrationUrl
                     speakers {
                         email
