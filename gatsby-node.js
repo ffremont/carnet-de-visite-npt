@@ -42,6 +42,7 @@ const fetchAnimationsRessources = async (graphql) =>
                 edges {
                     node {
                         description
+                        registrationUrl
                         documents {
                             href
                             label

@@ -47,7 +47,8 @@ export const Animation = ({ animation }) => {
                 
                     sx={{
                         width: matches ? '100%' : '30%',
-                        maxWidth: '400px',
+                        maxWidth: '350px',
+                        padding:'15px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -88,13 +89,14 @@ export const Animation = ({ animation }) => {
                         sx={{
                             display: 'flex',
                             gap: '3px',
+                            flexWrap: 'wrap'
                         }}
                     >
                         {!!registrationUrl && <Chip
                             size="small"
                             icon={<FactCheckIcon />}
                             label="S'inscrire"
-                            className={styles.registrationButton}
+                            className="registrationChip"
                         />}
                         <Chip
                             size="small"
@@ -147,7 +149,6 @@ export const Animation = ({ animation }) => {
                         className={styles.iconButtonMobile}
                         component={Link}
                         to={`/animations/${slug}`}
-                        onClick={() => changeFavorites(animation.identifier)}
                         aria-label="voir"
                     >
                         <SearchIcon />

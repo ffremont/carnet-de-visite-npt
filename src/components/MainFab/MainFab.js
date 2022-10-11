@@ -4,13 +4,13 @@ import ShareIcon from '@mui/icons-material/Share'
 import * as styles from './MainFab.module.less'
 
 export const MainFab = () => {
-    const visible = !!window.navigator.share;
+    const visible = !!global.navigator.share;
 
     const handleShare = () => {
-        window.navigator.share({
+        global.navigator.share({
             title: 'Numérique pour toutes',
             text: 'Consultez et construisez votre carnet de visite personnalisé.',
-            url: window.location.href
+            url: global.location.href
         })
     }
 

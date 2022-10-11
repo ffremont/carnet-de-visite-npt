@@ -10,7 +10,7 @@ import { MainFab } from '../components/MainFab'
 
 const IndexPage = () => {
     return (
-        <Container maxWidth="sm" sx={{ marginBottom: '80px' }}>
+        <Container maxWidth="md" sx={{ marginBottom: '80px' }}>
             <MainMedia />
             <MainFab/>
             <PackList />

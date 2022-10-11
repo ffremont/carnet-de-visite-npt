@@ -16,6 +16,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import * as styles from './animation.module.less'
 import { TYPES } from '../components/AppConstants'
+import FactCheckIcon from '@mui/icons-material/FactCheck'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import PersonIcon from '@mui/icons-material/Person'
@@ -89,7 +90,13 @@ const AnimationTemplate = ({ pageContext }) => {
                 >
                     {animation.name}
                 </Typography>
-                <Box>
+                <Box className={styles.chips}>
+                    {!!animation.registrationUrl && <Chip
+                            size="small"
+                            icon={<FactCheckIcon />}
+                            label="S'inscrire"
+                            className="registrationChip"
+                        />}
                     <Chip
                         size="small"
                         label={animation.slots}
@@ -99,7 +106,7 @@ const AnimationTemplate = ({ pageContext }) => {
                 </Box>
 
                 <Typography
-                    sx={{ padding: '10px 5px' }}
+                    sx={{ padding: '10px 5px', whiteSpace: 'break-spaces' }}
                     variant="body1"
                     gutterBottom
                 >
