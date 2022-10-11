@@ -6,7 +6,7 @@ import { Header } from '../components/Header'
 
 const SpeakerPage = () => {
     return (
-        <Container maxWidth="sm" sx={{ marginBottom: '80px', marginTop:'60px' }}>
+        <Container maxWidth="md" sx={{ marginBottom: '80px', marginTop:'60px' }}>
              <Header
                 subTitle="Intervenants"
                 title="Mon carnet de visite"

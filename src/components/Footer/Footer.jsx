@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { styled } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery';
 import QrIcon from '../../../assets/qr.svg'
 import {
     AppBar,
@@ -53,7 +52,7 @@ export const Footer = () => {
                         Programme
                     </Button>
 
-                    <StyledFab color="secondary" aria-label="add">
+                    <StyledFab component={Link} to="scan" color="secondary" aria-label="add">
                         <QrIcon />
                     </StyledFab>
 

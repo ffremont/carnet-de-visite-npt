@@ -7,7 +7,7 @@ import { Header } from '../components/Header';
 
  const ProgrammationPage = () => {
     return (
-        <Container maxWidth="sm" sx={{ marginBottom: '80px', marginTop:'60px' }}>
+        <Container maxWidth="md" sx={{ marginBottom: '80px', marginTop:'60px' }}>
             <Header
                 subTitle="Programmation"
                 title="Mon carnet de visite"

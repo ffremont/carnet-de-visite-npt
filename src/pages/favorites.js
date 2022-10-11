@@ -6,7 +6,7 @@ import { FavoriteList } from '../components/Favorite'
 
 const FavoritePage = () => {
     return (
-        <Container maxWidth="sm" sx={{ marginBottom: '80px' }}>
+        <Container maxWidth="md" sx={{ marginBottom: '80px' }}>
             <FavoriteList />
             <Footer />
         </Container>

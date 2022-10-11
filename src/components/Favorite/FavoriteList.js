@@ -4,7 +4,7 @@ import { Pack } from '../Pack'
 import { useStore } from '../../core/store'
 import { Animation } from '../Animation'
 import { Speaker } from '../Speakers'
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 export const FavoriteList = () => {
     const [favorites] = useStore('favorites', [])
@@ -115,6 +115,7 @@ export const FavoriteList = () => {
             flexDirection: 'column',
             margin: '20px 0'
         }}>
+            {userFavorites.length === 0 &&<Typography variant="h4" sx={{textAlign:'center', opacity: 0.5}}>😥 aucun favori</Typography>}
             {userFavorites.map((favorite) => {
                 if (favorite.internal.type === 'PackJson') {
                     return <Pack key={favorite.id} pack={favorite} />

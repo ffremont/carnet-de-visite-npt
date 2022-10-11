@@ -6,8 +6,9 @@
     "name": "Comment valoriser mes compétences transférables",
     "logo": "metier-outils-pour-ma-reconversion/1-logo.png",
     "image": "metier-outils-pour-ma-reconversion/1-image.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante scelerisque, pharetra sem quis, pulvinar urna. Suspendisse velit tellus, congue nec nunc id, ullamcorper tincidunt lorem. Vivamus vel venenatis felis. Aliquam sollicitudin arcu mi, sit amet semper ex semper vitae. In at eros eget ante auctor eleifend at viverra lacus. Aliquam congue a arcu in scelerisque. Nulla placerat nisi sagittis sagittis blandit. Vivamus massa orci, condimentum fermentum lacinia quis, pulvinar quis arcu. Cras lacinia, lacus nec mattis volutpat, nibh magna hendrerit nunc, sollicitudin varius ligula metus sed massa. Donec ornare non augue ac ullamcorper. Donec id leo ac dolor fringilla eleifend et suscipit nibh.",
+    "description": "L'objectif de cet atelier est double : \n- vous faire découvrir la programmation\n- apprendre à coder un petit programme (surpris est le fil rouge ! 😉 )\n\nDes machines seront mises à votre disposition avec tout le nécessaire pour coder. L'équipe NiortWeb sera là pour vous accompagner pas à pas dans la découverte et la réalisation du programme.\n\nLa durée de la session est de 45 min.",
     "slots": "15h45 - 16h30",
+    "registrationUrl": "https://www.niort-tech.fr/activity/google-ateliers-numeriques-2/",
     "links": [
         {
             "label": "Portail mission locale",

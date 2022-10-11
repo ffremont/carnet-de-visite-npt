@@ -114,6 +114,7 @@ export const Speaker = ({ speaker }) => {
                         sx={{
                             display: 'flex',
                             gap: '3px',
+                            flexWrap: 'wrap'
                         }}
                     >
                         <Chip size="small" label={role} color="secondary" />

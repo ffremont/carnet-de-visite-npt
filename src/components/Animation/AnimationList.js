@@ -3,6 +3,7 @@ import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Animation } from './Animation/Animation'
 import { Typography } from '@mui/material'
+import FactCheckIcon from '@mui/icons-material/FactCheck';
 import { filterHeadProps } from '../../../.cache/head/utils';
 
 export const AnimationList = () => {
@@ -29,6 +30,7 @@ export const AnimationList = () => {
                     slots
                     slug
                     type
+                    registrationUrl
                     speakers {
                         email
                         firstname

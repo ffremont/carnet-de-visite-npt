@@ -8,7 +8,8 @@ const Qr = () => {
     return (
         <>
             <QrReader
-            videoContainerStyle={{paddingTop:0}}
+                constraints={{ facingMode: 'environment' }}
+                videoContainerStyle={{ paddingTop: 0 }}
                 videoStyle={{
                     position: 'fixed',
                     right: 0,
@@ -18,7 +19,7 @@ const Qr = () => {
                 }}
                 onResult={(result, error) => {
                     if (!!result) {
-                        setData(result?.text)
+                        alert(result?.text)
                     }
 
                     if (!!error) {
