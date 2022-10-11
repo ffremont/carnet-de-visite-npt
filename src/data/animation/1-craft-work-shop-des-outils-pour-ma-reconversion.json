@@ -2,6 +2,8 @@
     "identifier": "1-metier-des-outils-pour-ma-reconversion",
     "slug": "metier-outils-pour-ma-reconversion",
     "type": "craftWorkShop",
+    "floor": 2,
+    "room": "22",
     "organization": "Mission Locale",
     "name": "Comment valoriser mes compétences transférables",
     "logo": "metier-outils-pour-ma-reconversion/1-logo.png",
