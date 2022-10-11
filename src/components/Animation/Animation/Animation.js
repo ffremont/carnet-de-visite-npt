@@ -139,7 +139,7 @@ export const Animation = ({ animation }) => {
                         className={styles.iconButtonMobile}
                         component={Link}
                         to={registrationUrl}
-                        aria-label="voir"
+                        aria-label="s'inscrire"
                     >
                         <FactCheckIcon />
                     </IconButton>}

@@ -1,9 +1,14 @@
 import * as React from 'react'
 import { useState } from 'react'
 import { QrReader } from 'react-qr-reader'
+import { navigate } from '@reach/router';
 
 const Qr = () => {
     const [data, setData] = useState('No result')
+
+    const handleScan = (text)=>{
+        navigate((new URL(text).pathname));
+    }
 
     return (
         <>
@@ -19,7 +24,7 @@ const Qr = () => {
                 }}
                 onResult={(result, error) => {
                     if (!!result) {
-                        alert(result?.text)
+                        handleScan(result?.text);
                     }
 
                     if (!!error) {
