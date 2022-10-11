@@ -1,6 +1,7 @@
 import {
     Avatar,
     Box,
+    Button,
     Chip,
     IconButton,
     Paper,
@@ -12,13 +13,16 @@ import * as React from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import * as styles from './Animation.module.less'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import FactCheckIcon from '@mui/icons-material/FactCheck'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { TYPES } from '../../../components/AppConstants'
 import { useStore } from '../../../core/store'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 
 export const Animation = ({ animation }) => {
-    const { description, slug, name, type, logo, slots } = animation
+    const { description, slug, name, type, logo, slots, registrationUrl } =
+        animation
+
     const [favorites, setFavorites] = useStore('favorites', [])
     const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'))
 
@@ -33,12 +37,14 @@ export const Animation = ({ animation }) => {
     return (
         <Paper className={styles.paper}>
             <Box
+            className={!!registrationUrl ? styles.registrationBox : ''}
                 sx={{
                     display: 'flex',
                     flexDirection: matches ? 'column' : 'row',
                 }}
             >
                 <Box
+                
                     sx={{
                         width: matches ? '100%' : '30%',
                         maxWidth: '400px',
@@ -47,11 +53,15 @@ export const Animation = ({ animation }) => {
                         justifyContent: 'center',
                     }}
                 >
-                    <GatsbyImage
-                        className={styles.image}
-                        image={getImage(logo.childImageSharp.gatsbyImageData)}
-                        alt={logo.base}
-                    />
+                    <div>
+                        <GatsbyImage
+                            className={styles.image}
+                            image={getImage(
+                                logo.childImageSharp.gatsbyImageData
+                            )}
+                            alt={logo.base}
+                        />
+                    </div>
                 </Box>
                 <Box
                     sx={{
@@ -80,11 +90,18 @@ export const Animation = ({ animation }) => {
                             gap: '3px',
                         }}
                     >
+                        {!!registrationUrl && <Chip
+                            size="small"
+                            icon={<FactCheckIcon />}
+                            label="S'inscrire"
+                            className={styles.registrationButton}
+                        />}
                         <Chip
                             size="small"
                             label={TYPES[type]}
                             color="secondary"
                         />
+
                         <Chip
                             size="small"
                             label={slots}
@@ -114,6 +131,17 @@ export const Animation = ({ animation }) => {
                         )}
                     </IconButton>
 
+                    {!!registrationUrl && <IconButton
+                        sx={{ flex: 1 }}
+                        rel="noopener noreferrer"
+                        className={styles.iconButtonMobile}
+                        component={Link}
+                        to={registrationUrl}
+                        aria-label="voir"
+                    >
+                        <FactCheckIcon />
+                    </IconButton>}
+
                     <IconButton
                         sx={{ flex: 1 }}
                         className={styles.iconButtonMobile}
@@ -124,6 +152,8 @@ export const Animation = ({ animation }) => {
                     >
                         <SearchIcon />
                     </IconButton>
+
+                   
                 </Box>
             </Box>
         </Paper>
