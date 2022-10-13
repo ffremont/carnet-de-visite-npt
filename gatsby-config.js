@@ -10,7 +10,21 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-less",
     "gatsby-plugin-image",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+         icon: 'src/images/logo.png',
+         cache_busting_mode: 'none',
+         start_url:"/"
+      }
+   },
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/animations/*`, `/programmation`],
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
