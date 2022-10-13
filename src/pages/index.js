@@ -13,7 +13,7 @@ const IndexPage = () => {
     return (
         <Container maxWidth="md" sx={{ marginBottom: '80px' }}>
             <Helmet title="Accueil | Carnet de visite Numérique pour toutes"/>
-            <MainMedia />
+            <MainMedia />   
             <MainFab/>
             <PackList />
 

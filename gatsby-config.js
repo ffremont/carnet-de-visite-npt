@@ -4,7 +4,7 @@ module.exports = {
   },
   siteMetadata: {
     title: `Carnet de visite`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://carnet-de-visite-numerique-pour-toutes.web.app`,
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",

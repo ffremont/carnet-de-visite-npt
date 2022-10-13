@@ -13,6 +13,7 @@ import {
     Typography,
 } from '@mui/material'
 import PolicyIcon from '@mui/icons-material/Policy'
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { TYPES } from '../AppConstants'
 
@@ -50,12 +51,20 @@ export const MoreArea = ({ className }) => {
             </Card>
 
             <List>
-                <ListItem disablePadding>
+                <ListItem sx={{color:'grey !important'}} disablePadding rel="noreferrer noopener" target="_blank" component="a" href="https://docs.google.com/document/d/e/2PACX-1vSQFj3Cvh-tpM3XVZyjeYQJM6t2Vf1Pa41E5IUeMQ6WOqahhaoyjZLSIaUULEoi0LXmGGfApPiyC6An/pub">
                     <ListItemButton>
                         <ListItemIcon>
                             <PolicyIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Mentions légales" rel="noreferrer noopener" target="_blank" component="a" href="https://docs.google.com/document/d/e/2PACX-1vSQFj3Cvh-tpM3XVZyjeYQJM6t2Vf1Pa41E5IUeMQ6WOqahhaoyjZLSIaUULEoi0LXmGGfApPiyC6An/pub" />
+                        <ListItemText primary="Mentions légales"  />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem sx={{color:'grey !important'}} disablePadding component="a" href="mailto:ff.fremont.florent@gmail.com">
+                    <ListItemButton>
+                        <ListItemIcon>
+                            <AlternateEmailIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Nous contacter"  />
                     </ListItemButton>
                 </ListItem>
             </List>
