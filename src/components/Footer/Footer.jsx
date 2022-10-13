@@ -7,6 +7,7 @@ import {
     Button,
     Fab,
     Toolbar,
+    useMediaQuery,
 } from '@mui/material'
 import HomeIcon from '@mui/icons-material/Home'
 import TocIcon from '@mui/icons-material/Toc'
@@ -26,6 +27,7 @@ const StyledFab = styled(Fab)({
 })
 
 export const Footer = () => {
+    const matches = useMediaQuery((theme) => theme.breakpoints.down('lg'))
     return (
         <AppBar position="fixed" sx={{ top: 'auto', bottom: 0 }}>
             <Container sx={{padding:0}} maxWidth="lg">
@@ -52,9 +54,9 @@ export const Footer = () => {
                         Programme
                     </Button>
 
-                    <StyledFab component={Link} to="scan" color="secondary" aria-label="add">
+                    {matches && <StyledFab component={Link} to="scan" color="secondary" aria-label="add">
                         <QrIcon />
-                    </StyledFab>
+                    </StyledFab>}
 
                     <Box sx={{ flexGrow: 1 }} />
                    

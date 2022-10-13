@@ -12,7 +12,7 @@ import { Helmet } from 'react-helmet'
 const IndexPage = () => {
     return (
         <Container maxWidth="md" sx={{ marginBottom: '80px' }}>
-            <Helmet title="Accueil - Carnet de visite"/>
+            <Helmet title="Accueil | Carnet de visite Numérique pour toutes"/>
             <MainMedia />
             <MainFab/>
             <PackList />
