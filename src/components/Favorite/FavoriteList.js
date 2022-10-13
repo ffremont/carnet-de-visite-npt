@@ -59,6 +59,8 @@ export const FavoriteList = () => {
                         name
                         organization
                         registrationUrl
+                        floor
+                        room
                         slots
                         slug
                         type

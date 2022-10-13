@@ -2,12 +2,18 @@ import * as React from 'react'
 import { useState } from 'react'
 import { QrReader } from 'react-qr-reader'
 import { navigate } from '@reach/router';
+import { QR_REDIRECT_HOSTNAME_WHITELIST } from '../components/AppConstants';
 
 const Qr = () => {
     const [data, setData] = useState('No result')
 
     const handleScan = (text)=>{
-        navigate((new URL(text).pathname));
+        const myUrl = new URL(text);
+        if(QR_REDIRECT_HOSTNAME_WHITELIST.indexOf(myUrl.hostname.toLocaleLowerCase()) > -1){
+            navigate(myUrl.pathname);
+        }else{
+            alert('QR invalide');
+        }
     }
 
     return (

@@ -14,15 +14,18 @@ import {
 } from '@mui/material'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
+import LockIcon from '@mui/icons-material/Lock';
+import ShareIcon from '@mui/icons-material/Share'
 import * as styles from './animation.module.less'
-import { TYPES } from '../components/AppConstants'
+import { isBrowser, TYPES } from '../components/AppConstants'
 import FactCheckIcon from '@mui/icons-material/FactCheck'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import PersonIcon from '@mui/icons-material/Person'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
+import LockOpenIcon from '@mui/icons-material/LockOpen'
 import DescriptionIcon from '@mui/icons-material/Description'
-import { navigate } from "gatsby";
+import { navigate } from 'gatsby'
 import { Speaker } from '../components/Speakers'
 import { useStore } from '../core/store'
 import { FavoriteBorderOutlined } from '@mui/icons-material'
@@ -33,6 +36,16 @@ const AnimationTemplate = ({ pageContext }) => {
 
     const [favorites, setFavorites] = useStore('favorites', [])
 
+    const visibleShareBtn = isBrowser() && !!window.navigator.share;
+
+    const handleShare = () => {
+        if(!isBrowser()) return;
+        window.navigator.share({
+            title: 'Carnet de visites',
+            text: '👩‍💻 Numérique pour toutes - Consultez et construisez votre carnet de visites personnalisé.',
+            url: window.location.href
+        })
+    }
     const changeFavorites = (identifier) => {
         if (!favorites.includes(identifier)) {
             setFavorites((oldVal) => [...oldVal, identifier])
@@ -52,18 +65,47 @@ const AnimationTemplate = ({ pageContext }) => {
                 <ArrowBackIosNewIcon />
             </Fab>
 
-            <Fab
-                onClick={() => changeFavorites(animation.identifier)}
-                className={styles.favorite}
-                size="medium"
-                aria-label="favorite"
-            >
-                {favorites.includes(animation.identifier) ? (
-                    <FavoriteIcon />
-                ) : (
-                    <FavoriteBorderOutlined />
-                )}
-            </Fab>
+            <div className={styles.fabMenu}>
+                <Fab
+                    onClick={() => changeFavorites(animation.identifier)}
+                    className={styles.favorite}
+                    size="medium"
+                    aria-label="favorite"
+                    variant="extended"
+                    
+                >
+                    {favorites.includes(animation.identifier) ? (
+                        <><FavoriteIcon sx={{ mr: 1 }}/> Retirer</>
+                    ) : (
+                        <><FavoriteBorderOutlined sx={{ mr: 1 }}/> Ajouter</>
+                    )}
+                </Fab>
+                {visibleShareBtn && <Fab
+                    onClick={handleShare}
+                    variant="extended"
+                    className={styles.shareFab}
+                    size="medium"
+                    aria-label="retour"
+                >
+                    <ShareIcon sx={{ mr: 1 }} />
+                    Partager
+                </Fab>}
+
+                {!!animation.registrationUrl && <Fab
+                    variant="extended"
+                    className={styles.registrationFab}
+                    size="medium"
+                    aria-label="add"
+                    component="a"
+                    href={animation.registrationUrl}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    <LockOpenIcon sx={{ mr: 1 }} />
+                    Je m'inscris
+                </Fab>}
+            </div>
+
             <GatsbyImage
                 className={styles.image}
                 image={getImage(
@@ -91,12 +133,14 @@ const AnimationTemplate = ({ pageContext }) => {
                     {animation.name}
                 </Typography>
                 <Box className={styles.chips}>
-                    {!!animation.registrationUrl && <Chip
+                    {!!animation.registrationUrl && (
+                        <Chip
                             size="small"
-                            icon={<FactCheckIcon />}
-                            label="S'inscrire"
+                            icon={<LockIcon />}
+                            label="Inscription nécessaire"
                             className="registrationChip"
-                        />}
+                        />
+                    )}
                     <Chip
                         size="small"
                         label={animation.slots}
@@ -133,13 +177,10 @@ const AnimationTemplate = ({ pageContext }) => {
                             <PersonIcon /> Intervenant(e)s
                         </Typography>
 
-                        
-
-                        {animation.speakers.length > 0 && (
+                        {animation.speakers.length > 0 &&
                             animation.speakers.map((speaker) => (
-                                <Speaker key={speaker.id} speaker={speaker}/>
-                            ))
-                        )}
+                                <Speaker key={speaker.id} speaker={speaker} />
+                            ))}
                     </CardContent>
                 </Card>
 

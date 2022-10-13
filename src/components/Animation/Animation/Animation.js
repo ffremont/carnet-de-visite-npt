@@ -13,9 +13,10 @@ import * as React from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import * as styles from './Animation.module.less'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import FactCheckIcon from '@mui/icons-material/FactCheck'
+import LockIcon from '@mui/icons-material/Lock';
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { TYPES } from '../../../components/AppConstants'
+import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { useStore } from '../../../core/store'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 
@@ -71,9 +72,9 @@ export const Animation = ({ animation }) => {
                     }}
                 >
                     <Typography variant="h6" gutterBottom>
-                        <span className={styles.etageChip}>
+                        {!!floor && !!room && <span className={styles.etageChip}>
                          {floor}{floor > 1 ? 'ème': 'er'}, salle {room}
-                        </span>
+                        </span>}
                         {name}
                     </Typography>
                     <Typography variant="body1" gutterBottom>
@@ -97,8 +98,8 @@ export const Animation = ({ animation }) => {
                         {!!registrationUrl && (
                             <Chip
                                 size="small"
-                                icon={<FactCheckIcon />}
-                                label="S'inscrire"
+                                icon={<LockIcon />}
+                                label="Inscription"
                                 className="registrationChip"
                             />
                         )}
@@ -144,9 +145,9 @@ export const Animation = ({ animation }) => {
                             className={styles.iconButtonMobile}
                             component={Link}
                             to={registrationUrl}
-                            aria-label="s'inscrire"
+                            aria-label="inscription"
                         >
-                            <FactCheckIcon />
+                            <LockOpenIcon />
                         </IconButton>
                     )}
 
