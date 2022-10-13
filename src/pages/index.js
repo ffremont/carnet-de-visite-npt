@@ -7,10 +7,12 @@ import { MoreArea } from '../components/MoreArea'
 import * as styles from './index.module.less'
 import '../global.less'
 import { MainFab } from '../components/MainFab'
+import { Helmet } from 'react-helmet'
 
 const IndexPage = () => {
     return (
         <Container maxWidth="md" sx={{ marginBottom: '80px' }}>
+            <Helmet title="Accueil - Carnet de visite"/>
             <MainMedia />
             <MainFab/>
             <PackList />

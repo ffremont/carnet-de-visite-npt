@@ -30,6 +30,7 @@ import { Speaker } from '../components/Speakers'
 import { useStore } from '../core/store'
 import { FavoriteBorderOutlined } from '@mui/icons-material'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet';
 
 const AnimationTemplate = ({ pageContext }) => {
     const { animation } = pageContext
@@ -41,8 +42,8 @@ const AnimationTemplate = ({ pageContext }) => {
     const handleShare = () => {
         if(!isBrowser()) return;
         window.navigator.share({
-            title: 'Carnet de visites',
-            text: '👩‍💻 Numérique pour toutes - Consultez et construisez votre carnet de visites personnalisé.',
+            title: 'Carnet de visite',
+            text: '👩‍💻 Numérique pour toutes - Consultez et construisez votre carnet de visite personnalisé.',
             url: window.location.href
         })
     }
@@ -56,6 +57,7 @@ const AnimationTemplate = ({ pageContext }) => {
 
     return (
         <Container disableGutters>
+            <Helmet title="Fiche Animation | Carnet de visite Numérique pour toutes"/>
             <Fab
                 onClick={() => navigate(-1)}
                 className={styles.back}

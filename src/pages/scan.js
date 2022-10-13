@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { QrReader } from 'react-qr-reader'
 import { navigate } from '@reach/router';
 import { QR_REDIRECT_HOSTNAME_WHITELIST } from '../components/AppConstants';
+import { Helmet } from 'react-helmet';
 
 const Qr = () => {
     const [data, setData] = useState('No result')
@@ -18,6 +19,7 @@ const Qr = () => {
 
     return (
         <>
+        <Helmet title="Scan QR | Carnet de visite Numérique pour toutes"/>
             <QrReader
                 constraints={{ facingMode: 'environment' }}
                 videoContainerStyle={{ paddingTop: 0 }}

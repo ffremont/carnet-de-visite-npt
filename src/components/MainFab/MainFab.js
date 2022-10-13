@@ -10,8 +10,8 @@ export const MainFab = () => {
     const handleShare = () => {
         if(!isBrowser()) return;
         window.navigator.share({
-            title: 'Carnet de visites',
-            text: '👩‍💻 Numérique pour toutes - Consultez et construisez votre carnet de visites personnalisé.',
+            title: 'Carnet de visite',
+            text: '👩‍💻 Numérique pour toutes - Consultez et construisez votre carnet de visite personnalisé.',
             url: window.location.href
         })
     }

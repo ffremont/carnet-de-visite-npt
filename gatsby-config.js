@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-less",
     "gatsby-plugin-image",
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -29,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Numérique pour toutes - Carnet de visites",
-        short_name: "NPT - Carnet de visites",
+        name: "Numérique pour toutes - Carnet de visite",
+        short_name: "NPT - Carnet de visite",
         start_url: "/",
         background_color: "#251e5b",
         theme_color: "#efefef",

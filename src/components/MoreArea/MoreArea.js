@@ -55,7 +55,7 @@ export const MoreArea = ({ className }) => {
                         <ListItemIcon>
                             <PolicyIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Mentions légales" />
+                        <ListItemText primary="Mentions légales" rel="noreferrer noopener" target="_blank" component="a" href="https://docs.google.com/document/d/e/2PACX-1vSQFj3Cvh-tpM3XVZyjeYQJM6t2Vf1Pa41E5IUeMQ6WOqahhaoyjZLSIaUULEoi0LXmGGfApPiyC6An/pub" />
                     </ListItemButton>
                 </ListItem>
             </List>
