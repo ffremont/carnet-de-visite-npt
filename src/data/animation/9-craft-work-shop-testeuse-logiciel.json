@@ -1,0 +1,27 @@
+{
+    "identifier": "9-craft-work-shop-testeuse-logiciel",
+    "slug": "metier-testeuse-logiciel-2",
+    "type": "craftWorkShop",
+    "floor": 2,
+    "room": "BIG",
+    "organization": "SOGETI",
+    "name": "Testeuse logiciel",
+    "logo": "9-craft-work-shop-testeuse-logiciel/testeuse.jpeg",
+    "image": "9-craft-work-shop-testeuse-logiciel/testeuse.jpeg",
+    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "slots": "12h30 - 13h15",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Portail mission locale",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}

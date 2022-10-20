@@ -1,0 +1,27 @@
+{
+    "identifier": "6-craft-work-shop-developpeuse",
+    "slug": "metier-developpeuse-2",
+    "type": "craftWorkShop",
+    "floor": 3,
+    "room": "Tech",
+    "organization": "MAAF",
+    "name": "Développeuse",
+    "logo": "6-craft-work-shop-developpeuse/dev.jpeg",
+    "image": "6-craft-work-shop-developpeuse/dev.jpeg",
+    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "slots": "14h15 - 15h00",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Portail mission locale",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}

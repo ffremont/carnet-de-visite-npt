@@ -1,0 +1,27 @@
+{
+    "identifier": "10-craft-work-shop-ui-ux-design",
+    "slug": "metier-ui-ux-design",
+    "type": "craftWorkShop",
+    "floor": 3,
+    "room": "",
+    "organization": "IPSOON",
+    "name": "UI/UX design",
+    "logo": "10-craft-work-shop-ui-ux-design/uiux.jpeg",
+    "image": "10-craft-work-shop-ui-ux-design/uiux.jpeg",
+    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "slots": "15h30 - 16h15",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Portail mission locale",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}

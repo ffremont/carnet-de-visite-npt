@@ -8,6 +8,7 @@ import * as styles from './index.module.less'
 import '../global.less'
 import { MainFab } from '../components/MainFab'
 import { Helmet } from 'react-helmet'
+import { Information } from '../components/Information'
 
 const IndexPage = () => {
     return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
             <Helmet title="Accueil | Carnet de visite Numérique pour toutes"/>
             <MainMedia />   
             <MainFab/>
+            <Information />
             <PackList />
 
             <MoreArea className={styles.morearea} />

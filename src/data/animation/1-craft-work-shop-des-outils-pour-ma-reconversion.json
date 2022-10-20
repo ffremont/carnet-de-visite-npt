@@ -1,27 +1,27 @@
 {
-    "identifier": "1-metier-des-outils-pour-ma-reconversion",
-    "slug": "metier-outils-pour-ma-reconversion",
+    "identifier": "1-metier-developpeuse",
+    "slug": "metier-developpeuse",
     "type": "craftWorkShop",
-    "floor": 2,
-    "room": "22",
-    "organization": "Mission Locale",
-    "name": "Comment valoriser mes compétences transférables",
-    "logo": "metier-outils-pour-ma-reconversion/1-logo.png",
-    "image": "metier-outils-pour-ma-reconversion/1-image.jpeg",
-    "description": "L'objectif de cet atelier est double : \n- vous faire découvrir la programmation\n- apprendre à coder un petit programme (surpris est le fil rouge ! 😉 )\n\nDes machines seront mises à votre disposition avec tout le nécessaire pour coder. L'équipe NiortWeb sera là pour vous accompagner pas à pas dans la découverte et la réalisation du programme.\n\nLa durée de la session est de 45 min.",
-    "slots": "15h45 - 16h30",
-    "registrationUrl": "https://www.niort-tech.fr/activity/google-ateliers-numeriques-2/",
+    "floor": 3,
+    "room": "",
+    "organization": "Sopra",
+    "name": "Développeuse",
+    "logo": "1-developpeuse/developpeuse.jpeg",
+    "image": "1-developpeuse/developpeuse.jpeg",
+    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "slots": "10h00 - 10h45",
+    "registrationUrl": "",
     "links": [
         {
             "label": "Portail mission locale",
-            "href": "..."
+            "href": "none"
         }
     ],
     "documents": [
         {
             "label": "Formulaire d'inscription",
-            "href": "1-formulaire-inscription.pdf"
+            "href": "none"
         }
     ],
-    "speakers": ["camille-cohignac"]
+    "speakers": []
 }

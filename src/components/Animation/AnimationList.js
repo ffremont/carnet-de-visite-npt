@@ -2,9 +2,9 @@ import * as React from 'react'
 import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Animation } from './Animation/Animation'
-import { Typography } from '@mui/material'
-import FactCheckIcon from '@mui/icons-material/FactCheck';
-import { filterHeadProps } from '../../../.cache/head/utils';
+import { Box, Typography } from '@mui/material'
+import FactCheckIcon from '@mui/icons-material/FactCheck'
+import { filterHeadProps } from '../../../.cache/head/utils'
 
 export const AnimationList = () => {
     const search = new URLSearchParams(useLocation().search)
@@ -12,16 +12,16 @@ export const AnimationList = () => {
     const { allAnimationJson, allPackJson } = useStaticQuery(graphql`
         query AllAnimationJson {
             allPackJson {
-              nodes {
-                id
-                animations {
-                  identifier
+                nodes {
+                    id
+                    animations {
+                        identifier
+                    }
+                    identifier
+                    type
                 }
-                identifier
-                type
-              }
             }
-          
+
             allAnimationJson {
                 nodes {
                     identifier
@@ -58,7 +58,7 @@ export const AnimationList = () => {
                     }
                     image {
                         childImageSharp {
-                            gatsbyImageData
+                            gatsbyImageData(height: 194)
                         }
                     }
                     id
@@ -66,24 +66,45 @@ export const AnimationList = () => {
             }
         }
     `)
-    const currentPack = search.get('pack') ? allPackJson.nodes.find(pack => pack && (pack.identifier === search.get('pack'))) : null
+    const currentPack = search.get('pack')
+        ? allPackJson.nodes.find(
+              (pack) => pack && pack.identifier === search.get('pack')
+          )
+        : null
+    const type = search.get('type')
 
-    const animations = allAnimationJson.nodes.filter(animation => {
-      if(currentPack){
-        return currentPack.animations.filter(a => !!a).some(a => a.identifier === animation.identifier)
-      }else{
-        return true;
-      }
-    });
+    const animations = allAnimationJson.nodes
+        .filter((animation) => {
+            if (currentPack) {
+                return currentPack.animations
+                    .filter((a) => !!a)
+                    .some((a) => a.identifier === animation.identifier)
+            } else {
+                return true
+            }
+        })
+        .filter((animation) => {
+            if (type) {
+                return animation.type === type
+            } else {
+                return true
+            }
+        })
 
-    return <>
-      {animations.map((animation) => (
-        <Animation key={animation.id} animation={animation} />))}
-        {(animations.length === 0) && <Typography sx={{textAlign:'center'}} variant="h5" gutterBottom>
-        Aucune donnée
-      </Typography>}
-      
-
-    </>
-    
+    return (
+        <Box sx={{ gap: '5px', display: 'flex', flexDirection: 'column' }}>
+            {animations.map((animation) => (
+                <Animation key={animation.id} animation={animation} />
+            ))}
+            {animations.length === 0 && (
+                <Typography
+                    sx={{ textAlign: 'center' }}
+                    variant="h5"
+                    gutterBottom
+                >
+                    Aucune donnée
+                </Typography>
+            )}
+        </Box>
+    )
 }

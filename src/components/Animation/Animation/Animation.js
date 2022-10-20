@@ -21,7 +21,7 @@ import { useStore } from '../../../core/store'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 
 export const Animation = ({ animation }) => {
-    const { description, slug, name, type, logo, slots, registrationUrl , floor, room} =
+    const { description, organization, slug, name, type, logo, slots, registrationUrl , floor, room} =
         animation
 
     const [favorites, setFavorites] = useStore('favorites', [])
@@ -47,7 +47,6 @@ export const Animation = ({ animation }) => {
                 <Box
                     sx={{
                         width: matches ? '100%' : '30%',
-                        maxWidth: '350px',
                         padding: '15px',
                         display: 'flex',
                         alignItems: 'center',
@@ -72,10 +71,10 @@ export const Animation = ({ animation }) => {
                     }}
                 >
                     <Typography variant="h6" gutterBottom>
-                        {!!floor && !!room && <span className={styles.etageChip}>
-                         {floor}{floor > 1 ? 'ème': 'er'}, salle {room}
+                        {!!floor && <span className={styles.etageChip}>
+                         {floor}{floor > 1 ? 'ème': 'er'}{!!room ? `, salle ${room}`: ' étage'}
                         </span>}
-                        {name}
+                        {name} {organization ? ` (${organization})` : ''}
                     </Typography>
                     <Typography variant="body1" gutterBottom>
                         {description.length > 60

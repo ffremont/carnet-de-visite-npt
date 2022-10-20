@@ -132,7 +132,7 @@ const AnimationTemplate = ({ pageContext }) => {
                     gutterBottom
                     component="div"
                 >
-                    {animation.name}
+                    {animation.name} {animation.organization ? ` (${animation.organization})` : ''}
                 </Typography>
                 <Box className={styles.chips}>
                     {!!animation.registrationUrl && (
@@ -148,6 +148,11 @@ const AnimationTemplate = ({ pageContext }) => {
                         label={animation.slots}
                         variant="outlined"
                         color="primary"
+                    />
+                     <Chip
+                        size="small"
+                        label={`${animation.floor}${animation.floor > 1 ? 'ème': 'er'}${!!animation.room ? `, salle ${animation.room}`: ' étage'}`}
+                        variant="outlined"
                     />
                 </Box>
 
@@ -208,7 +213,7 @@ const AnimationTemplate = ({ pageContext }) => {
                         </Typography>
 
                         <List component="div" disablePadding>
-                            {animation.documents.map((doc) => (
+                            {animation.documents.filter(d => d.href!== 'none').map((doc) => (
                                 <ListItemButton
                                     disablePadding
                                     sx={{ pl: 4 }}
@@ -250,7 +255,7 @@ const AnimationTemplate = ({ pageContext }) => {
                         </Typography>
 
                         <List component="div" disablePadding>
-                            {animation.links.map((doc) => (
+                            {animation.links.filter(l => l.href!== 'none').map((doc) => (
                                 <ListItemButton
                                     disablePadding
                                     sx={{ pl: 4 }}

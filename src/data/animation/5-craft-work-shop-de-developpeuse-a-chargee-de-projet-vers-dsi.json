@@ -1,0 +1,27 @@
+{
+    "identifier": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi",
+    "slug": "metier-de-developpeuse-a-chargee-de-projet-vers-dsi",
+    "type": "craftWorkShop",
+    "floor": 3,
+    "room": "Tech",
+    "organization": "Groupe Y",
+    "name": "Business Analyste - Développeuse",
+    "logo": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi/dsi.jpeg",
+    "image": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi/dsi.jpeg",
+    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "slots": "12h30- 13h15",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Portail mission locale",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}
