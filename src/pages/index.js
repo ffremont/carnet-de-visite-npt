@@ -16,6 +16,13 @@ const IndexPage = () => {
             <Helmet title="Accueil | Carnet de visite Numérique pour toutes"/>
             <MainMedia />   
             <MainFab/>
+
+<div className="info-pratique">
+22/11/2022 | NIORT TECH<br/>
+JOURNÉE DE 10H À 17H30 | GRATUIT<br/>
+AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
+</div>
+
             <Information />
             <PackList />
 

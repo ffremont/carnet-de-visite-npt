@@ -11,13 +11,9 @@ import * as React from 'react'
 export const Information = () => (
     <Card sx={{ marginBottom: '20px' }}>
         <CardContent>
-            <Typography
-                sx={{ fontSize: 14 }}
-                color="text.secondary"
-                gutterBottom
-            >
-                A NiortTech le 23 novembre 2022
-            </Typography>
+            
+            
+
             <Typography variant="h5" component="div">
                 Numérique pour toutes, c’est quoi ?
             </Typography>

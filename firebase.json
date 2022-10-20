@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "carnet-de-visite-numerique-pour-toutes",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
