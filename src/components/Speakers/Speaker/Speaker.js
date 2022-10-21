@@ -44,7 +44,10 @@ export const Speaker = ({ speaker }) => {
             .addPhoneNumber(workPhone, 'WORK')
             .addURL(website)
 
-        setVcard(`${myVCard.buildVCard()}`)
+        const myBlob = new Blob([myVCard.buildVCard()], {
+            type: 'text/vcard',
+        })
+        setVcard(URL.createObjectURL(myBlob))
     }, [speaker])
 
     const changeFavorites = (identifier) => {
@@ -85,6 +88,7 @@ export const Speaker = ({ speaker }) => {
                         display: 'flex',
                         flexDirection: 'column',
                         padding: '10px 20px',
+                        justifyContent: 'center',
                         flex: 1,
                     }}
                 >
@@ -114,7 +118,7 @@ export const Speaker = ({ speaker }) => {
                         sx={{
                             display: 'flex',
                             gap: '3px',
-                            flexWrap: 'wrap'
+                            flexWrap: 'wrap',
                         }}
                     >
                         <Chip size="small" label={role} color="secondary" />
@@ -155,7 +159,7 @@ export const Speaker = ({ speaker }) => {
                         onClick={() => {}}
                         className={styles.iconButtonMobile}
                         download={`${firstname}-${lastname}-carte-de-visite.vcf`}
-                        href={`data:text/vcard,${vcard}`}
+                        href={vcard}
                     >
                         <FileDownloadIcon />
                     </IconButton>

@@ -8,20 +8,16 @@ import * as styles from './index.module.less'
 import '../global.less'
 import { MainFab } from '../components/MainFab'
 import { Helmet } from 'react-helmet'
-import { Information } from '../components/Information'
+import { Information, Pratique } from '../components/Information'
 
 const IndexPage = () => {
     return (
         <Container maxWidth="md" sx={{ marginBottom: '80px' }}>
-            <Helmet title="Accueil | Carnet de visite Numérique pour toutes"/>
-            <MainMedia />   
-            <MainFab/>
+            <Helmet title="Accueil | Carnet de visite Numérique pour toutes" />
+            <MainMedia />
+            <MainFab />
 
-<div className="info-pratique">
-22/11/2022 | NIORT TECH<br/>
-JOURNÉE DE 10H À 17H30 | GRATUIT<br/>
-AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
-</div>
+            <Pratique />
 
             <Information />
             <PackList />

@@ -1,1 +1,2 @@
-export  {Information} from './Information'
+export  {Information} from './Information/Information'
+export {Pratique} from './Pratique/Pratique'

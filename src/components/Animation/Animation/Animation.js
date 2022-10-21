@@ -68,6 +68,7 @@ export const Animation = ({ animation }) => {
                         display: 'flex',
                         flexDirection: 'column',
                         padding: '10px 20px',
+                        justifyContent:'center'
                     }}
                 >
                     <Typography variant="h6" gutterBottom>
