@@ -21,6 +21,7 @@
     "@fontsource/spinnaker": "^4.5.9",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.5",
+    "firebase": "^9.12.1",
     "gatsby": "^4.23.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-gatsby-cloud": "^4.23.1",
