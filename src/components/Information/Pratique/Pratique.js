@@ -17,7 +17,7 @@ export const Pratique = () => (
             <br />
             JOURNÉE DE 10H À 17H30 | GRATUIT
             <br />
-            AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
+            AFTERWORK À PARTIR DE 19H &amp; GRATUIT SUR INSCRIPTION
         </div>
         <Box sx={{textAlign:'center'}}>
             <Fab

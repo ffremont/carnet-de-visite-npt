@@ -2,14 +2,14 @@
     "identifier": "7-craft-work-shop-testeuse-logiciel",
     "slug": "metier-testuse-logiciel",
     "type": "craftWorkShop",
-    "floor": 2,
-    "room": "BIG",
+    "floor": 3,
+    "room": "Tech",
     "organization": "SOGETI",
     "name": "Testeuse logiciel",
     "logo": "7-craft-work-shop-testeuse-logiciel/testeuse.jpeg",
     "image": "7-craft-work-shop-testeuse-logiciel/testeuse.jpeg",
-    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
-    "slots": "10h00 - 10h45",
+    "description": "Emeline VANDERCAMERE et Ludivine Blanchard de SOGETI vous partagent leurs parcours professionnels et leurs métiers de Testeuse logiciel au quotidien.",
+    "slots": "10h15 - 11h00",
     "registrationUrl": "",
     "links": [
         {

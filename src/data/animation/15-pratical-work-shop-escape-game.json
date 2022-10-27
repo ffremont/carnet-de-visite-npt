@@ -2,15 +2,15 @@
     "identifier": "15-pratical-work-shop-escape-game",
     "slug": "escape-game-decouverte-des-metiers-du-numerique",
     "type": "praticalWorkShop",
-    "floor": 2,
+    "floor": 3,
     "room": "",
     "organization": "ENI",
     "name": "Escape game : Découverte des métiers du numérique",
     "logo": "15-pratical-work-shop-escape-game/game.jpeg",
     "image": "15-pratical-work-shop-escape-game/game.jpeg",
-    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "description": "L'objectif de cet atelier est vous faire découvrir la \n\nL'équipe d'ENI sera là pour vous accompagner ...\nLa durée de la session est de 45 min.",
     "slots": "11h00 / 15h00",
-    "registrationUrl": "",
+    "registrationUrl": "https://forms.gle/ZCCCXyoCHd7yWXNP8",
     "links": [
         {
             "label": "Site web",

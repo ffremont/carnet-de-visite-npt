@@ -2,15 +2,15 @@
     "identifier": "13-pratical-work-shop-atelier-coding",
     "slug": "atelier-coding",
     "type": "praticalWorkShop",
-    "floor": 2,
-    "room": "Data",
+    "floor": 0,
+    "room": "",
     "organization": "Niort Web",
     "name": "Venez créer votre 1er programme de 0",
     "logo": "13-pratical-work-shop-atelier-coding/coding.jpeg",
     "image": "13-pratical-work-shop-atelier-coding/coding.jpeg",
     "description": "L'objectif de cet atelier est double : \n- vous faire découvrir la programmation\n- apprendre à coder un petit programme (surpris est le fil rouge ! 😉 )\n\nDes machines seront mises à votre disposition avec tout le nécessaire pour coder. L'équipe NiortWeb sera là pour vous accompagner pas à pas dans la découverte et la réalisation du programme.\n\nLa durée de la session est de 45 min.",
     "slots": "10h00 - 17h30",
-    "registrationUrl": "",
+    "registrationUrl": "https://forms.gle/FrGmMtt7BJDzKQYJ9",
     "links": [
         {
             "label": "Site web",

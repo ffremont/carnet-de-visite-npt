@@ -13,16 +13,26 @@ import * as React from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import * as styles from './Animation.module.less'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import LockIcon from '@mui/icons-material/Lock';
+import LockIcon from '@mui/icons-material/Lock'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { TYPES } from '../../../components/AppConstants'
-import LockOpenIcon from '@mui/icons-material/LockOpen';
+import LockOpenIcon from '@mui/icons-material/LockOpen'
 import { useStore } from '../../../core/store'
 import FavoriteBorderOutlined from '@mui/icons-material/FavoriteBorderOutlined'
 
 export const Animation = ({ animation }) => {
-    const { description, organization, slug, name, type, logo, slots, registrationUrl , floor, room} =
-        animation
+    const {
+        description,
+        organization,
+        slug,
+        name,
+        type,
+        logo,
+        slots,
+        registrationUrl,
+        floor,
+        room,
+    } = animation
 
     const [favorites, setFavorites] = useStore('favorites', [])
     const matches = useMediaQuery((theme) => theme.breakpoints.down('sm'))
@@ -68,13 +78,20 @@ export const Animation = ({ animation }) => {
                         display: 'flex',
                         flexDirection: 'column',
                         padding: '10px 20px',
-                        justifyContent:'center'
+                        justifyContent: 'center',
                     }}
                 >
                     <Typography variant="h6" gutterBottom>
-                        {!!floor && <span className={styles.etageChip}>
-                         {floor}{floor > 1 ? 'ème': 'er'}{!!room ? `, salle ${room}`: ' étage'}
-                        </span>}
+                        {!!floor && (
+                            <span className={styles.etageChip}>
+                                {floor}
+                                {floor > 1 ? 'ème' : 'er'}
+                                {!!room ? `, salle ${room}` : ' étage'}
+                            </span>
+                        )}
+                        {floor === 0 && (
+                            <span className={styles.etageChip}>RDC</span>
+                        )}
                         {name} {organization ? ` (${organization})` : ''}
                     </Typography>
                     <Typography variant="body1" gutterBottom>

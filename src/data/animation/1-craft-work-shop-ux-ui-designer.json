@@ -1,0 +1,27 @@
+{
+    "identifier": "1-craft-work-shop-ux-ui-designer",
+    "slug": "metier-ux-ui-designer-2",
+    "type": "craftWorkShop",
+    "floor": 3,
+    "room": "Cloud",
+    "organization": "LISTEN TOO",
+    "name": "UX/UI Designer",
+    "logo": "1-craft-work-shop-ux-ui-designer/uiux.jpeg",
+    "image": "1-craft-work-shop-ux-ui-designer/uiux.jpeg",
+    "description": "Mallaury HAMON de LISTEN TOO vous partage son parcours professionnel et son métier d’UX DESIGNER au quotidien.",
+    "slots": "10h15 - 11h00",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Portail mission locale",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}

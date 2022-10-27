@@ -1,0 +1,27 @@
+{
+    "identifier": "21-craft-work-shop-data-analyst",
+    "slug": "metier-data-analyst",
+    "type": "craftWorkShop",
+    "floor": 3,
+    "room": "Cookie",
+    "organization": "KEREON",
+    "name": "Data Analyst",
+    "logo": "21-craft-work-shop-data-analyst/data.jpeg",
+    "image": "21-craft-work-shop-data-analyst/data.jpeg",
+    "description": "Estelle ROSSET de KEREON vous partage son parcours professionnel et son métier de Data Analyst au quotidien.",
+    "slots": "10h15 - 11h00",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Portail mission locale",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}

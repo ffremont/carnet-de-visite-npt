@@ -56,7 +56,7 @@ const AnimationTemplate = ({ pageContext }) => {
     }
 
     return (
-        <Container disableGutters>
+        <Container disableGutters sx={{marginBottom:'20px'}}>
             <Helmet title="Fiche Animation | Carnet de visite Numérique pour toutes"/>
             <Fab
                 onClick={() => navigate(-1)}
@@ -149,11 +149,16 @@ const AnimationTemplate = ({ pageContext }) => {
                         variant="outlined"
                         color="primary"
                     />
-                     <Chip
+                     {animation.floor > 0 && <Chip
                         size="small"
                         label={`${animation.floor}${animation.floor > 1 ? 'ème': 'er'}${!!animation.room ? `, salle ${animation.room}`: ' étage'}`}
                         variant="outlined"
-                    />
+                    />}
+                    {animation.floor === 0 && <Chip
+                        size="small"
+                        label={`Rez-de-chaussée${!!animation.room ? `, salle ${animation.room}`: ''}`}
+                        variant="outlined"
+                    />}
                 </Box>
 
                 <Typography
@@ -191,7 +196,7 @@ const AnimationTemplate = ({ pageContext }) => {
                     </CardContent>
                 </Card>
 
-                <Card
+                {animation.documents.filter(d => d.href!== 'none').length >0 && <Card
                     sx={{
                         borderLeft: '2px solid #251e5b',
                         marginTop: '20px',
@@ -231,9 +236,9 @@ const AnimationTemplate = ({ pageContext }) => {
                             ))}
                         </List>
                     </CardContent>
-                </Card>
+                </Card>}
 
-                <Card
+                {animation.links.filter(l => l.href!== 'none').length > 0 && <Card
                     sx={{
                         borderLeft: '2px solid #251e5b',
                         marginTop: '20px',
@@ -273,7 +278,7 @@ const AnimationTemplate = ({ pageContext }) => {
                             ))}
                         </List>
                     </CardContent>
-                </Card>
+                </Card>}
             </Box>
             <Footer />
         </Container>

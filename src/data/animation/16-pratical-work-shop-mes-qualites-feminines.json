@@ -1,16 +1,16 @@
 {
-    "identifier": "16-pratical-work-shop-mes-qualites-feminines",
-    "slug": "mes-qualites-feminines",
+    "identifier": "16-pratical-work-shop-pitch-ton-projet",
+    "slug": "pitch-ton-projet",
     "type": "praticalWorkShop",
     "floor": 2,
-    "room": "",
+    "room": "Data",
     "organization": "",
-    "name": "Mes qualités féminines",
+    "name": "Pitch ton projet",
     "logo": "16-pratical-work-shop-mes-qualites-feminines/quality.jpeg",
     "image": "16-pratical-work-shop-mes-qualites-feminines/quality.jpeg",
-    "description": "Sed a nibh nec metus viverra varius non eget purus. Proin aliquet enim id metus pellentesque volutpat eleifend sit amet libero. Maecenas in consequat lacus. Praesent tempus lacinia lectus. Maecenas pellentesque lacus urna, ut luctus elit ullamcorper eu. Cras in est urna. Nulla dui neque, dictum non pellentesque at, ultricies in sem. Integer et efficitur elit, quis dignissim elit. Nulla ultrices sem ac enim condimentum maximus.",
+    "description": "Cet atelier \"Pitch ton projet\"  a pour objectif de vous aider à clarifier et parler de votre projet professionnel à vos réseaux ou futurs employeurs.\nil s'agit d'un accompagnement gratuit et solidaire à la recherche d'emploi.\nLa durée de la session est de 45 min.",
     "slots": "10h00 / 17h30",
-    "registrationUrl": "",
+    "registrationUrl": "https://forms.gle/DBVMRmzNtyRAvvEn8",
     "links": [
         {
             "label": "Site web",
