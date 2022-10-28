@@ -11,21 +11,9 @@ module.exports = {
     "gatsby-plugin-less",
     "gatsby-plugin-image",
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-         icon: 'src/images/logo.png',
-         cache_busting_mode: 'none',
-         start_url:"/"
-      }
-   },
+    
     "gatsby-plugin-sharp",
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/animations/*`, `/programmation`],
-      },
-    },
+    "gatsby-plugin-remove-serviceworker",
     "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
