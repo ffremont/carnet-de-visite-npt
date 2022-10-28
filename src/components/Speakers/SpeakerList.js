@@ -26,6 +26,7 @@ export const SpeakerList = () => {
             }
         }
     `)
+    allSpeakerJson.nodes.sort((a, b) => (a.identifier > b.identifier) ? 1 : -1);
     return allSpeakerJson.nodes.map((node) => (
         <Speaker key={node.id} speaker={node} />
     ))

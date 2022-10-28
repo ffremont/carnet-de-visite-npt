@@ -8,7 +8,7 @@
     "name": "Business Analyst",
     "logo": "19-craft-work-shop-business-analyst/ba.jpeg",
     "image": "19-craft-work-shop-business-analyst/ba.jpeg",
-    "description": "Solenne LE GUEVEL et Céline BAHABANIAN de SOPRA STERIA vous partagent leurs parcours professionnels et leur métier de Business Analyst au quotidien.",
+    "description": "Solen LE GUEVEL et Céline BAHABANIAN de SOPRA STERIA vous partagent leurs parcours professionnels et leur métier de Business Analyst au quotidien.",
     "slots": "14h15 - 15h00",
     "registrationUrl": "",
     "links": [
@@ -23,5 +23,5 @@
             "href": "none"
         }
     ],
-    "speakers": []
+    "speakers": ["solen-le-guevel", "celine-bahabanian"]
 }

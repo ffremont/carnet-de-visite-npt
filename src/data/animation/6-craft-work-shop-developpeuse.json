@@ -3,7 +3,7 @@
     "slug": "metier-developpeuse-2",
     "type": "craftWorkShop",
     "floor": 3,
-    "room": "Tech",
+    "room": "Cookie",
     "organization": "MAAF",
     "name": "Développeuse",
     "logo": "6-craft-work-shop-developpeuse/logo.jpeg",
@@ -26,5 +26,5 @@
             "href": "none"
         }
     ],
-    "speakers": []
+    "speakers": ["lauriane-gouraud"]
 }

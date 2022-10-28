@@ -91,6 +91,7 @@ export const AnimationList = () => {
             }
         })
 
+    animations.sortBy("floor", false, "slots", false);
     return (
         <Box sx={{ gap: '5px', display: 'flex', flexDirection: 'column' }}>
             {animations.map((animation) => (

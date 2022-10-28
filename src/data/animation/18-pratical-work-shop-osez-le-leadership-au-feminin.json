@@ -4,10 +4,10 @@
     "type": "praticalWorkShop",
     "floor": 0,
     "room": "",
-    "organization": "SNC",
+    "organization": "LES TRIBUS",
     "name": "Osez le leadership au Féminin",
-    "logo": "18-pratical-work-shop-osez-le-leadership-au-feminin/leadership.jpeg",
-    "image": "18-pratical-work-shop-osez-le-leadership-au-feminin/leadership.jpeg",
+    "logo": "18-pratical-work-shop-osez-le-leadership-au-feminin/logo.jpeg",
+    "image": "18-pratical-work-shop-osez-le-leadership-au-feminin/principale.jpeg",
     "description": "Un atelier collectif pour prendre confiance en soi et conscience de ses ressources et talents, afin de développer une vision positive de son projet ou sa trajectoire professionnelle\nLa durée de la session est de 1h30.",
     "slots": "10h00 / 17h30",
     "registrationUrl": "https://forms.gle/5912vyeuDX9Sw7vv6",
@@ -23,5 +23,5 @@
             "href": "none"
         }
     ],
-    "speakers": []
+    "speakers": ["emmanuelle-valentin"]
 }

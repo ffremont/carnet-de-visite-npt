@@ -4,7 +4,7 @@
     "type": "praticalWorkShop",
     "floor": 2,
     "room": "Data",
-    "organization": "",
+    "organization": "SNC",
     "name": "Pitch ton projet",
     "logo": "16-pratical-work-shop-mes-qualites-feminines/quality.jpeg",
     "image": "16-pratical-work-shop-mes-qualites-feminines/quality.jpeg",
@@ -19,9 +19,9 @@
     ],
     "documents": [
         {
-            "label": "Formulaire d'inscription",
-            "href": "none"
+            "label": "Affichette A4 SNC",
+            "href": "../16-pratical-work-shop-pitch-ton-projet/Affichette-A4-SNC-CE-personnalisable-Emmanuelle-Valentin.pdf"
         }
     ],
-    "speakers": []
+    "speakers": ["emmanuelle-valentin", "christian-gadiou", "anne-bouillere", "patricia-tomasini", "pascale-moreau", "frederique-donorio"]
 }

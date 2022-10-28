@@ -121,7 +121,7 @@ export const Speaker = ({ speaker }) => {
                             flexWrap: 'wrap',
                         }}
                     >
-                        <Chip size="small" label={role} color="secondary" />
+                        {!!role && <Chip size="small" label={role} color="secondary" />}
                         {!!organisation && (
                             <Chip
                                 size="small"
