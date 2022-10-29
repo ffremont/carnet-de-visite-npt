@@ -54,7 +54,7 @@ export const Footer = () => {
                         Programme
                     </Button>
 
-                    {matches && <StyledFab component={Link} to="scan" color="secondary" aria-label="add">
+                    {matches && <StyledFab component={Link} to="/scan" color="secondary" aria-label="add">
                         <QrIcon />
                     </StyledFab>}
 

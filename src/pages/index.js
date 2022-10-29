@@ -9,6 +9,7 @@ import '../global.less'
 import { MainFab } from '../components/MainFab'
 import { Helmet } from 'react-helmet'
 import { Information, Pratique } from '../components/Information'
+import { isBrowser } from '../components/AppConstants'
 
 const IndexPage = () => {
     React.useEffect(() => {
