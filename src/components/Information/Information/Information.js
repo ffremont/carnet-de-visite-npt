@@ -53,7 +53,7 @@ export const Information = () => (
                 A Niort TECH / 12-14 Avenue Bujault à NIORT, <br/>
                 Centre de
                 l'écosystème numérique sur Niort et espace de coworking de
-                start-up dans le digitals
+                start-up dans le digital
             </Typography>
         </CardContent>
     </Card>

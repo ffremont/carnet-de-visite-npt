@@ -3,8 +3,6 @@ import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Animation } from './Animation/Animation'
 import { Box, Typography } from '@mui/material'
-import FactCheckIcon from '@mui/icons-material/FactCheck'
-import { filterHeadProps } from '../../../.cache/head/utils'
 
 export const AnimationList = () => {
     const search = new URLSearchParams(useLocation().search)
@@ -91,30 +89,8 @@ export const AnimationList = () => {
             }
         })
 
-    const sortBy = function (arr, propertyName, sortDirection) {
-        var sortArguments = arguments
-        arr.sort(function (objA, objB) {
-            var result = 0
-            for (
-                var argIndex = 0;
-                argIndex < sortArguments.length && result === 0;
-                argIndex += 2
-            ) {
-                var propertyName = sortArguments[argIndex]
-                result =
-                    objA[propertyName] < objB[propertyName]
-                        ? -1
-                        : objA[propertyName] > objB[propertyName]
-                        ? 1
-                        : 0
-
-                //Reverse if sort order is false (DESC)
-                result *= !sortArguments[argIndex + 1] ? 1 : -1
-            }
-            return result
-        })
-    }
-    sortBy(animations, 'floor', false, 'slots', false)
+    
+    animations.sort(function(a,b) {return a.slots.localeCompare(b.slots)})
     return (
         <Box sx={{ gap: '5px', display: 'flex', flexDirection: 'column' }}>
             {animations.map((animation) => (

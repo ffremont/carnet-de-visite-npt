@@ -28,7 +28,7 @@ export const MoreArea = ({ className }) => {
 
     return (
         <>
-            <Card className={className}>
+            {/*<Card className={className}>
                 <CardContent>
                     <Typography variant="h5" component="div">
                         Plus d'information
@@ -48,7 +48,7 @@ export const MoreArea = ({ className }) => {
                         </ButtonGroup>
                     </Box>
                 </CardContent>
-            </Card>
+                            </Card>*/}
 
             <List>
                 <ListItem sx={{color:'grey !important'}} disablePadding rel="noreferrer noopener" target="_blank" component="a" href="https://docs.google.com/document/d/e/2PACX-1vSQFj3Cvh-tpM3XVZyjeYQJM6t2Vf1Pa41E5IUeMQ6WOqahhaoyjZLSIaUULEoi0LXmGGfApPiyC6An/pub">
