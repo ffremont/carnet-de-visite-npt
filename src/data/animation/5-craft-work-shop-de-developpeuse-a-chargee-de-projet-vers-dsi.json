@@ -6,9 +6,9 @@
     "room": "Cookie",
     "organization": "Groupe Y Nexia",
     "name": "Business Analyste - Développeuse",
-    "logo": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi/dsi.jpeg",
-    "image": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi/dsi.jpeg",
-    "description": "Laureen PERRIN et Céline LETOMBE du GROUPE Y Nexia vous partagent leurs parcours professionnels et leur métier de Développeuse, Chargée de projet et Directrice des systèmes d’informations au quotidien.",
+    "logo": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi/logo.jpeg",
+    "image": "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi/principal.png",
+    "description": "Laureen PERRIN et Floriane SIEDLECKI du GROUPE Y Nexia vous partagent leurs parcours professionnels et leur métier de Développeuse, Chargée de projet et Directrice des systèmes d’informations au quotidien.",
     "slots": "12h30- 13h15",
     "registrationUrl": "",
     "links": [
@@ -23,5 +23,5 @@
             "href": "none"
         }
     ],
-    "speakers": ["laureen-perrin", "celine-letombe"]
+    "speakers": ["laureen-perrin", "floriane-siedlecki"]
 }

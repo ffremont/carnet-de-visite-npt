@@ -37,7 +37,7 @@ export const Speaker = ({ speaker }) => {
     React.useEffect(() => {
         const myVCard = new VCard('vcard')
         myVCard
-            .addName(lastname, firstname)
+            .addName(lastname.toUpperCase(), firstname)
             .addCompany(organisation)
             .addRole(role)
             .addEmail(email)
@@ -93,7 +93,7 @@ export const Speaker = ({ speaker }) => {
                     }}
                 >
                     <Typography variant="h6">
-                        {firstname} {lastname}
+                        {firstname} {lastname.toUpperCase()}
                     </Typography>
 
                     <address>
