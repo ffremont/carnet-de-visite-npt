@@ -76,6 +76,7 @@ export const Animation = ({ animation }) => {
                 <Box
                     sx={{
                         display: 'flex',
+                        flex:1,
                         flexDirection: 'column',
                         padding: '10px 20px',
                         justifyContent: 'center',

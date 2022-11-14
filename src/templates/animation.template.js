@@ -212,7 +212,7 @@ const AnimationTemplate = ({ pageContext }) => {
                     {animation.description}
                 </Typography>
 
-                <Card
+                {animation.speakers.length > 0 && <Card
                     sx={{
                         borderLeft: '2px solid #251e5b',
                     }}
@@ -237,7 +237,7 @@ const AnimationTemplate = ({ pageContext }) => {
                                 <Speaker key={speaker.id} speaker={speaker} />
                             ))}
                     </CardContent>
-                </Card>
+                </Card>}
 
                 {animation.documents.filter((d) => d.href !== 'none').length >
                     0 && (

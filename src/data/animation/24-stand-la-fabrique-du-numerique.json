@@ -1,0 +1,27 @@
+{
+    "identifier": "24-stand-la-fabrique-du-numerique",
+    "slug": "stand-fabrique-du-numerique",
+    "type": "stand",
+    "floor": 0,
+    "room": "",
+    "organization": "",
+    "name": "FABRIQUE DU NUMERIQUE",
+    "logo": "24-stand-la-fabrique-du-numerique/logo.jpeg",
+    "image": "24-stand-la-fabrique-du-numerique/logo.jpeg",
+    "description": "",
+    "slots": "10h15 - 17h30",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["virginie-lefebvre"]
+}

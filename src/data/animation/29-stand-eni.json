@@ -1,0 +1,27 @@
+{
+    "identifier": "29-stand-eni",
+    "slug": "stand-eni",
+    "type": "stand",
+    "floor": 0,
+    "room": "",
+    "organization": "",
+    "name": "ENI Ecole Informatique",
+    "logo": "29-stand-eni/logo.jpeg",
+    "image": "29-stand-eni/logo.jpeg",
+    "description": "Gr\u00E2ce \u00E0 un r\u00E9seau de plus de 10 000 dipl\u00F4m\u00E9s, ENI Ecole Informatique a acquis une renomm\u00E9e nationale dans la formation d'informaticiens. En contact permanent avec les entreprises du num\u00E9rique, l\u2019ENI propose des formations du bac +2 au bac +5 avec pour objectif l\u2019emploi dans 2 fili\u00E8res:\r\n #KingCoder #QueenCodeuse : d\u00E9veloppement web, mobile, conception d\u2019application, management des SI, etc.\r\n #StarSystem : syst\u00E8mes et r\u00E9seaux, administration, s\u00E9curit\u00E9, etc.",
+    "slots": "10h15 - 17h30",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["virginie-neveu", "emma-pageot", "laura-sergent", "margot-bugnot"]
+}

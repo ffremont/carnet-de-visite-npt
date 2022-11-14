@@ -1,0 +1,33 @@
+{
+    "identifier": "26-stand-jume",
+    "slug": "stand-jume",
+    "type": "stand",
+    "floor": 0,
+    "room": "",
+    "organization": "",
+    "name": "JUME",
+    "logo": "26-stand-jume/logo.png",
+    "image": "26-stand-jume/principale.png",
+    "description": "Jume - 1er cabinet de conseil innovant d\u00E9di\u00E9 \u00E0 l\u2019accompagnement des carri\u00E8res f\u00E9minines et \u00E0 la mixit\u00E9 des carri\u00E8res en entreprise.\r\n Jume accompagne, les carri\u00E8res f\u00E9minines \u00E0 travers : \r\n - Des programmes de formations talents f\u00E9minins et mixit\u00E9\r\n - Des bilans de comp\u00E9tences innovants\r\n - L\u2019\u00E9laboration et la mise en place de plans d\u2019actions mixit\u00E9 en entreprise \r\n - Des prestations d\u2019audit et de conseil strat\u00E9gique, organisationnel et RH\r\n Notre m\u00E9thode innovante est bas\u00E9e sur l'approche centr\u00E9e sur la personne et les neurosciences. Elle permet de d\u00E9velopper les comp\u00E9tences professionnelles \u00E0 travers une prise de conscience individuelle de ses strat\u00E9gies d'am\u00E9lioration. \r\n Notre m\u00E9thodologie d'accompagnement \u00E0 la mixit\u00E9 repose sur une approche int\u00E9grative. Il s'agit d'une approche globale qui tient compte des relations syst\u00E9miques et organisationnelles dans l'entreprise pour viser un \u00E9quilibre global professionnel et priv\u00E9.\r\n Au niveau individuel, notre m\u00E9thode a pour but de mettre en lumi\u00E8re l'individualit\u00E9 et de valoriser les sp\u00E9cificit\u00E9s de chacun.e pour garantir \u00E0 toutes et tous les m\u00EAmes chances d'accomplir une destin\u00E9e choisie.",
+    "slots": "10h15 - 17h30",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Bilan de compétences",
+            "href": "https://www.jume.co/bilandecompetencesdirigeantesetcadres"
+        }, {
+            "label": "Programme mixité",
+            "href": "https://www.jume.co/formationdirigeantes"
+        }, {
+            "label": "Approche innovante",
+            "href": "https://www.jume.co"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["julia-memeteau"]
+}

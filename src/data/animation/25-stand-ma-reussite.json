@@ -1,0 +1,27 @@
+{
+    "identifier": "25-stand-ma-reussite",
+    "slug": "stand-ma-reussite",
+    "type": "stand",
+    "floor": 0,
+    "room": "",
+    "organization": "",
+    "name": "MA REUSSITE",
+    "logo": "25-stand-ma-reussite/logo.png",
+    "image": "25-stand-ma-reussite/logo.png",
+    "description": "",
+    "slots": "10h15 - 17h30",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": []
+}

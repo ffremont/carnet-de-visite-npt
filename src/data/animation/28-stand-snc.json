@@ -1,0 +1,27 @@
+{
+    "identifier": "28-stand-snc",
+    "slug": "stand-snc",
+    "type": "stand",
+    "floor": 0,
+    "room": "",
+    "organization": "",
+    "name": "SOLIDARITE NOUVELLE FACE AU CHOMAGE",
+    "logo": "28-stand-snc/logo.png",
+    "image": "28-stand-snc/logo.png",
+    "description": "Accompagnement gratuit et solidaire \u00E0 la recherche d'emploi\r\n Atelier Pitch ton projet : vous aider \u00E0 clarifier et parler de votre projet professionnel \u00E0 vos r\u00E9seaux ou futurs employeurs",
+    "slots": "10h15 - 17h30",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["emmanuelle-valentin", "christian-gadiou", "anne-bouillere", "patricia-tomasini", "pascale-moreau", "frederique-donorio"]
+}

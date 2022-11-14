@@ -5,22 +5,11 @@
     "type": "",
     "image": "je-m-informe.jpeg",
     "animations": [
-       "1-craft-work-shop-ux-ui-designer",
-       "2-metier-quelle-evolution-carriere",
-       "3-metier-content-manager",
-       "4-metier-business-analyste-developpeuse",
-       "5-craft-work-shop-de-developpeuse-a-chargee-de-projet-vers-dsi",
-       "6-craft-work-shop-developpeuse",
-       "7-craft-work-shop-testeuse-logiciel",
-       "8-craft-work-shop-product-owner",
-       "9-craft-work-shop-testeuse-logiciel",
-       "10-craft-work-shop-ui-ux-design",
-       "11-craft-work-shop-developpeuse-fullstack",
-       "12-craft-work-shop-chargee-de-conseil-digital",
-       "19-craft-work-shop-business-analyst",
-       "20-craft-work-shop-consultant-cyber-secu",
-       "21-craft-work-shop-data-analyst",
-       "22-craft-work-shop-cheffe-de-projet-developpeurs",
-       "23-craft-work-shop-developpeuses"
+        "24-stand-la-fabrique-du-numerique",
+        "25-stand-ma-reussite",
+        "26-stand-jume",
+        "27-stand-transition-pro",
+        "28-stand-snc",
+        "29-stand-eni"
     ]
 }
