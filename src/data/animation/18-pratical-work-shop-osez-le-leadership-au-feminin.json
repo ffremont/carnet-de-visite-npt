@@ -6,15 +6,15 @@
     "room": "",
     "organization": "LES TRIBUS",
     "name": "Osez le leadership au Féminin",
-    "logo": "18-pratical-work-shop-osez-le-leadership-au-feminin/logo.jpeg",
+    "logo": "18-pratical-work-shop-osez-le-leadership-au-feminin/principale.jpeg",
     "image": "18-pratical-work-shop-osez-le-leadership-au-feminin/principale.jpeg",
-    "description": "Un atelier collectif pour prendre confiance en soi et conscience de ses ressources et talents, afin de développer une vision positive de son projet ou sa trajectoire professionnelle\nLa durée de la session est de 1h30.",
-    "slots": "10h00 / 17h30",
+    "description": "Un atelier collectif pour prendre confiance en soi et conscience de ses ressources et talents, afin de d\u00E9velopper une vision positive de son projet ou sa trajectoire professionnelle\r\nLa dur\u00E9e de la session est de 1h30.",
+    "slots": "10h15 / 17h30",
     "registrationUrl": "https://forms.gle/5912vyeuDX9Sw7vv6",
     "links": [
         {
-            "label": "...",
-            "href": "none"
+            "label": "www.lestribus.com",
+            "href": "https://www.lestribus.com "
         }
     ],
     "documents": [
