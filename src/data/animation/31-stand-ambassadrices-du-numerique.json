@@ -1,0 +1,27 @@
+{
+    "identifier": "31-stand-ambassadrices-du-numerique",
+    "slug": "stand-ambassadrices-du-numerique",
+    "type": "stand",
+    "floor": 0,
+    "room": "",
+    "organization": "",
+    "name": "AMBASSADRICES DU NUMERIQUE",
+    "logo": "31-stand-ambassadrices-du-numerique/logo.jpeg",
+    "image": "31-stand-ambassadrices-du-numerique/logo.jpeg",
+    "description": "Le stand des Ambassadrices du num\u00E9rique sera pr\u00E9sent pour :\r\nAccueillir et orienter le public pour participer \u00E0 cet \u00E9v\u00E8nement\r\nInformer et conseiller  de fa\u00E7on plus individuelle sur les m\u00E9tiers et formations dans le num\u00E9rique",
+    "slots": "10h15 - 17h30",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "",
+            "href": "none"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["laetitia-gentili", "celine-bahabanian", "celine-morin"]
+}
