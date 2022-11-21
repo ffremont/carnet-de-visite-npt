@@ -6,9 +6,9 @@
     "room": "",
     "organization": "ENI",
     "name": "Escape game : Découverte des métiers du numérique",
-    "logo": "15-pratical-work-shop-escape-game/game.jpeg",
-    "image": "15-pratical-work-shop-escape-game/game.jpeg",
-    "description": "A travers notre Escape Game, vous allez pouvoir :\r\n\r\n>  Mettre en avant vos comp\u00E9tences diverses\r\n>  D\u00E9montrer l\u2019existence de diff\u00E9rents types d\u2019intelligences (visuelle, logico-math\u00E9matique, musicale, etc\u2026)\r\n>  D\u00E9couvrir les m\u00E9tiers du num\u00E9rique\n\nLa durée de la session est de 45 min.",
+    "logo": "15-pratical-work-shop-escape-game/logo.jpeg",
+    "image": "15-pratical-work-shop-escape-game/main.jpeg",
+    "description": "A travers notre Escape Game, vous allez pouvoir :\r\n\u25CF  Mettre en avant vos comp\u00E9tences diverses\r\n\u25CF  D\u00E9montrer l\u2019existence de diff\u00E9rents types d\u2019intelligences (visuelle, logico-math\u00E9matique, musicale, etc\u2026)\r\n\u25CF  D\u00E9couvrir les m\u00E9tiers du num\u00E9rique",
     "slots": "11h00 / 15h00",
     "registrationUrl": "https://forms.gle/ZCCCXyoCHd7yWXNP8",
     "links": [
