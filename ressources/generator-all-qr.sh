@@ -23,4 +23,6 @@ npx qrcode@latest -t "png" --width 512 -o "21-craft-work-shop-data-analyst.png" 
 npx qrcode@latest -t "png" --width 512 -o "22-craft-work-shop-cheffe-de-projet-developpeurs.png" "https://carnet-de-visite-numerique-pour-toutes.web.app/animations/metier-cheffe-de-projet-developpeurs"
 npx qrcode@latest -t "png" --width 512 -o "23-craft-work-shop-developpeuses.png" "https://carnet-de-visite-numerique-pour-toutes.web.app/animations/metier-developpeuses"
 
-npx qrcode@latest -t "png" --width 512 -o "apeagrippaaubigne.png" "https://apeagrippaaubigne.web.app/"
+npx qrcode@latest -t "png" --width 512 -o "trombinoscope.png" "https://codesandbox.io/s/trombinoscope-r7n472?file=/README.md"
+npx qrcode@latest -t "png" --width 512 -o "formulaire-declaration-de-sinistre-simplifiee.png" "https://codesandbox.io/s/formulaire-declaration-de-sinistre-simplifiee-8iv9jz?file=/README.md"
+npx qrcode@latest -t "png" --width 512 -o "les-composants-web.png" "https://codesandbox.io/s/les-composants-web-1xzym5?file=/README.md"
