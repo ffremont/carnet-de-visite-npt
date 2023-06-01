@@ -1,0 +1,27 @@
+{
+    "identifier": "9-cap-emploi-79",
+    "slug": "cap-emploi-79",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "CAP EMPLOI 79",
+    "name": "CAP EMPLOI 79",
+    "logo": "9-cap-emploi-79/logo.png",
+    "image": "9-cap-emploi-79/logo.png",
+    "description": "Qui sommes-nous ?\n\nAccompagnement des personnes en situation de handicap dans et vers l'emploi. A destination des salariés (privé et public), demandeurs d'emploi (inscrits ou non à Pôle Emploi) et des travailleurs indépendants.\n\nServices : \n\n> CEP : transition professionnelle des salariés avec un risque de licenciement pour inaptitude\n> Études, aménagements de poste et demandes de financement\n> Accompagnement à l'insertion professionnelle dite pérenne.\n> Accompagnement à la formation professionnelle et son financement.",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site Cap Emploi 79",
+            "href": "https://www.capemploi-79.com/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["team-cap-emploi-79"]
+}

@@ -9,9 +9,9 @@ import { Helmet } from 'react-helmet';
  const ProgrammationPage = () => {
     return (
         <Container maxWidth="md" sx={{ marginBottom: '80px', marginTop:'60px' }}>
-            <Helmet title="Programmation | Carnet de visite Numérique pour toutes"/>
+            <Helmet title="Organismes | Carnet de visite Numérique pour toutes"/>
             <Header
-                subTitle="Programmation"
+                subTitle="Organismes"
                 title="Mon carnet de visite"
             />
 

@@ -1,7 +1,8 @@
 export const TYPES = {
     craftWorkShop: 'Atelier métier',
     praticalWorkShop: 'Atelier pratique',
-    stand: 'Stand'
+    stand: 'Stand',
+    organisme: 'Organisme'
 }
 export const isBrowser = () => typeof window !== "undefined"
 

@@ -82,7 +82,7 @@ export const Animation = ({ animation }) => {
                         justifyContent: 'center',
                     }}
                 >
-                    <Typography variant="h6" gutterBottom>
+                   {/* <Typography variant="h6" gutterBottom>
                         {!!floor && (
                             <span className={styles.etageChip}>
                                 {floor}
@@ -94,12 +94,15 @@ export const Animation = ({ animation }) => {
                             <span className={styles.etageChip}>RDC</span>
                         )}
                         {name} {organization ? ` (${organization})` : ''}
-                    </Typography>
-                    <Typography variant="body1" gutterBottom>
+                        </Typography>*/} 
+                        <Typography variant="h5" gutterBottom>
+                        {name}
+                    </Typography>   
+                    {/*<Typography variant="body1" gutterBottom>
                         {description.length > 60
                             ? description.substr(0, 60) + '...'
                             : description}
-                    </Typography>
+                        </Typography>*/}
                     {/*<Link to={`/animations/${slug}`}>
                         Lire tout{' '}
                         <span className={styles.readArrow}>
@@ -121,18 +124,18 @@ export const Animation = ({ animation }) => {
                                 className="registrationChip"
                             />
                         )}
-                        <Chip
+                        {/*<Chip
                             size="small"
                             label={TYPES[type]}
                             color="secondary"
-                        />
+                        />*/}
 
-                        <Chip
+                        {/*<Chip
                             size="small"
                             label={slots}
                             variant="outlined"
                             color="primary"
-                        />
+                        />*/}
                     </Box>
                 </Box>
                 <Box

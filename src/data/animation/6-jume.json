@@ -1,0 +1,27 @@
+{
+    "identifier": "6-jume",
+    "slug": "jume",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Jume",
+    "name": "Jume",
+    "logo": "6-jume/logo.png",
+    "image": "6-jume/logo.png",
+    "description": "Qui sommes-nous ?\n\nCentre de formation, de conseil et de bilan de compétences promoteur de mixité et expert en accompagnement des carrières féminines.  \n\nServices : \n\n> Bilan de compétences\n> Formations (prise de poste, prise de parole en public, compétences émotionnelles, relationnelles, RH: accompagnement de carrière et de talents, création d'entreprise, mixité en entreprise, management, leadership)\n> Conseil (audit organisationnel et RH, supervision dirigeant.e et managers)\n> Retour à l'emploi après la maladie",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site Jume",
+            "href": "https://www.jume.co"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["julia-memeteau", "aline-morin-canteau", "lea-redien"]
+}
