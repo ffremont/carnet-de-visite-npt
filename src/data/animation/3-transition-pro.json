@@ -1,0 +1,27 @@
+{
+    "identifier": "3-transition-pro",
+    "slug": "transition-pro",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Transition pro",
+    "name": "Transitions Pro Nouvelle-Aquitaine",
+    "logo": "3-transition-pro/logo.png",
+    "image": "3-transition-pro/logo.png",
+    "description": "Qui sommes-nous ?\n\nTransitions Pro Nouvelle-Aquitaine est une association qui accompagne les salariés du secteur privé souhaitant changer de métier et faire évoluer leur carrière professionnelle.\nComment ? Grâce à différents dispositifs permettant aux salariés de concrétiser et financer leur projet professionnel !\n\nServices : \n\n> Le PTP (Projet de Transitions Professionnel) qui permet au salarié de s’absenter de son poste de travail pour suivre une formation afin d’acquérir de nouvelles compétences. \n> Le Dispositif démissionnaire qui offre la possibilité au salarié de démissionner afin de mettre en œuvre son projet professionnel de formation et/ou de création-reprise d’entreprise tout en percevant l’allocation chômage. \n> La certification CléA qui permet aux salariés qui ont peu ou pas de diplômes d’attester, par l’obtention d’un certificat, de leurs connaissances et compétences. \n> La VAE (Validation des Acquis de l’Expérience) qui permet au salarié de faire valider ses acquis professionnels, en vue de l’acquisition d’un diplôme ou d’un titre professionnel.\nTransitions Pro Nouvelle-Aquitaine c’est également une offre de services complète, entièrement gratuite et adaptée à chaque étape du projet professionnel du salarié : ateliers d’information, webinaires, rendez-vous en visio, accueil physique avec ou sans rdv, espaces en ligne sécurisés, démarches dématérialisées, …",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site Transition pro",
+            "href": "https://www.transitionspro-na.fr"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["marie-pierre-de-lepinay","nathalie-couesnon", "corinn-ballet"]
+}

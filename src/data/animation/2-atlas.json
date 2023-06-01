@@ -1,0 +1,27 @@
+{
+    "identifier": "2-atlas",
+    "slug": "atlas",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Atlas",
+    "name": "OPCO ATLAS",
+    "logo": "2-atlas/logo.jpg",
+    "image": "2-atlas/logo.jpg",
+    "description": "Qui sommes-nous ?\n\nAtlas est l’opérateur de compétences des entreprises, salariés et candidats à l'alternance des services financiers et du conseil. Il accompagne les entreprises de son secteur pour la formation des salariés, le financement des contrats en alternance principalement.\n\nServices : \n\nFinancement formation des salariés des entreprises du numérique notamment",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site Atlas",
+            "href": "https://www.opco-atlas.fr/atlas.html"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["sylvie-cagnone", "berangere-marrs"]
+}

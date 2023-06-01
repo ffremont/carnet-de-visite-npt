@@ -1,0 +1,27 @@
+{
+    "identifier": "7-mission-locale",
+    "slug": "mission-locale",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Mission locale",
+    "name": "Mission Locale Sud Deux-Sèvres",
+    "logo": "7-mission-locale/logo.png",
+    "image": "7-mission-locale/logo.png",
+    "description": "Qui sommes-nous ?\n\nLa mission locale c'est quoi? \nUn accompagnement dans ta recherche d’emploi ou la construction de ton projet professionnel pour tout jeune de 16 à 25 ans, sorti du système scolaire.\nLa mission locale t’accompagne pour : \n-\tTrouver du travail \n-\tDéfinir ton projet professionnel\n-\tTe former\n-\tGérer tes obstacles à l’emploi (santé, permis, budget, logement, …)  \n\nServices : \n\n> Des rendez-vous individuels avec ton conseiller dédié\n> Des ateliers collectifs\n> Un rythme sur-mesure",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site Mission locale",
+            "href": "https://www.mission-locale-sud79.fr/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["team-mission-locale"]
+}

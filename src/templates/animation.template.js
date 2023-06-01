@@ -12,13 +12,13 @@ import {
     ListItemText,
     Typography,
 } from '@mui/material'
+import Markdown from 'react-markdown'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import LockIcon from '@mui/icons-material/Lock'
 import ShareIcon from '@mui/icons-material/Share'
 import * as styles from './animation.module.less'
 import { isBrowser, TYPES } from '../components/AppConstants'
-import FactCheckIcon from '@mui/icons-material/FactCheck'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import InsertLinkIcon from '@mui/icons-material/InsertLink'
 import PersonIcon from '@mui/icons-material/Person'
@@ -55,15 +55,13 @@ const AnimationTemplate = ({ pageContext }) => {
         }
     }
 
-    console.log(getImage(
-        animation.image.childImageSharp.gatsbyImageData
-    ));
+    
 
     return (
         <Container disableGutters sx={{ marginBottom: '20px' }}>
             <Helmet>
                 <title>
-                    Fiche Animation | Carnet de visite Numérique pour toutes
+                    Fiche Organisme | Carnet de visite Numérique pour toutes
                 </title>
                 <meta property="og:title" content={`${animation.name} (Numérique pour toutes)`} />
                 <meta
@@ -142,14 +140,14 @@ const AnimationTemplate = ({ pageContext }) => {
                 alt={animation.image.base}
             />
             <Box sx={{ padding: '10px 10px 60px 10px' }}>
-                <Typography
+                {/*<Typography
                     sx={{ margin: 0 }}
                     variant="overline"
                     display="block"
                     gutterBottom
                 >
                     {TYPES[animation.type]}
-                </Typography>
+                </Typography>*/}
                 <Typography
                     sx={{
                         fontFamily: `'Fredoka One',"Roboto","Helvetica","Arial",sans-serif`,
@@ -159,10 +157,11 @@ const AnimationTemplate = ({ pageContext }) => {
                     component="div"
                 >
                     {animation.name}{' '}
-                    {animation.organization
+                    {/*animation.organization
                         ? ` (${animation.organization})`
-                        : ''}
+                : ''*/}
                 </Typography>
+                {animation?.links && <a href={animation.links[0].href}>Site web</a>}
                 <Box className={styles.chips}>
                     {!!animation.registrationUrl && (
                         <Chip
@@ -172,7 +171,7 @@ const AnimationTemplate = ({ pageContext }) => {
                             className="registrationChip"
                         />
                     )}
-                    <Chip
+                   {/* <Chip
                         size="small"
                         label={animation.slots}
                         variant="outlined"
@@ -201,7 +200,7 @@ const AnimationTemplate = ({ pageContext }) => {
                             }`}
                             variant="outlined"
                         />
-                    )}
+                    )}*/}
                 </Box>
 
                 <Typography
@@ -209,8 +208,9 @@ const AnimationTemplate = ({ pageContext }) => {
                     variant="body1"
                     gutterBottom
                 >
-                    {animation.description}
+                    
                 </Typography>
+                <Markdown>{animation.description}</Markdown>
 
                 {animation.speakers.length > 0 && <Card
                     sx={{
