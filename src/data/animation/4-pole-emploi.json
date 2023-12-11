@@ -1,0 +1,27 @@
+{
+    "identifier": "4-pole-emploi",
+    "slug": "pole-emploi",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Pole emploi",
+    "name": "POLE EMPLOI",
+    "logo": "4-pole-emploi/logo.png",
+    "image": "4-pole-emploi/logo.png",
+    "description": "Qui sommes-nous ?\n\nAgence de service public ayant pour mission l'inscription des demandeurs d'emploi, l'accompagnement à la recherche d'emploi et l'indemnisation des personnes ayant perdu leur emploi.  \n\nServices : \n\n> Suivi des démarches\n> propositions d'offres et de prestations.",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site pole emploi",
+            "href": "https://pole-emploi.fr"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["fabienne-cottier","yasmina-naud"]
+}

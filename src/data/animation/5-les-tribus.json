@@ -1,0 +1,27 @@
+{
+    "identifier": "5-les-tribus",
+    "slug": "les-tribus",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Les tribus",
+    "name": "Les Tribus",
+    "logo": "5-les-tribus/logo.png",
+    "image": "5-les-tribus/logo.png",
+    "description": "Qui sommes-nous ?\n\nCoach professionnelle, j'accompagne les personnes en reconversion ou en transition professionnelle pour les aider à dépasser leurs freins, remobiliser leurs ressources et trouver l'énergie d'un projet professionnel porteur de sens. \n\nServices : \n\n> Accompagnement individuel de type coaching ",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site Les Tribus",
+            "href": "https://www.lestribus.com"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["emmanuelle-valentin"]
+}

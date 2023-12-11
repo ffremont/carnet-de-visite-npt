@@ -1,0 +1,27 @@
+{
+    "identifier": "10-eni",
+    "slug": "eni",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "ENI Ecole Informatique",
+    "name": "ENI Ecole Informatique",
+    "logo": "10-eni/logo.png",
+    "image": "10-eni/logo.png",
+    "description": "Qui sommes-nous ?\n\nGrâce à un réseau de plus de 10 000 diplômés, ENI Ecole Informatique a acquis une renommée nationale dans la formation d'informaticiens. En contact permanent avec les entreprises du numérique, l’ENI propose des formations du bac +2 au bac +5 avec pour objectif l’emploi dans 2 filières:\n #KingCoder #QueenCodeuse : développement web, mobile, conception d’application, management des SI, etc.\n #StarSystem : systèmes et réseaux, administration, sécurité, etc.\n\nServices : \n\n> Formations dans la filière \"Développement\"\n> Formations dans la filiere \"Système Réseau\"\n> Formations dans la filiere \"Cybersécurité\"",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site ENI",
+            "href": "https://www.eni-ecole.fr/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["margot-bugnot", "thibaut-louis"]
+}
