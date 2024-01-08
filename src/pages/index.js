@@ -44,7 +44,7 @@ const IndexPage = () => {
                     property="og:url"
                     content={isBrowser() ? window.location.href : '/'}
                 />
-                <meta property="og:image" content="/banner.jpg" />
+                <meta property="og:image" content="/npt-2024.png" />
 
                 <link
                     rel="stylesheet"
@@ -62,7 +62,7 @@ const IndexPage = () => {
 
             <MoreArea className={styles.morearea} />
 
-            <dialog className="modal-window">
+            {/*<dialog className="modal-window">
                 <video controls autoPlay muted >
                     <source src="/video-evenement.mp4" type="video/mp4" />
                     Télécharger le
@@ -72,7 +72,7 @@ const IndexPage = () => {
                 <form method="dialog">
                     <button>Fermer</button>
                 </form>
-            </dialog>
+    </dialog>*/}
 
             <Footer />
         </Container>

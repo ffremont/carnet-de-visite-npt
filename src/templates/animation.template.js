@@ -12,7 +12,7 @@ import {
     ListItemText,
     Typography,
 } from '@mui/material'
-import Markdown from 'react-markdown'
+//import Markdown from 'react-markdown'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import LockIcon from '@mui/icons-material/Lock'
@@ -72,7 +72,7 @@ const AnimationTemplate = ({ pageContext }) => {
                 <meta property="og:url" content={isBrowser() ? window.location.href: '/'} />
                 <meta
                     property="og:image"
-                    content="/banner.jpg"
+                    content="/npt-2024.png"
                 />
             </Helmet>
             <Fab
@@ -208,9 +208,9 @@ const AnimationTemplate = ({ pageContext }) => {
                     variant="body1"
                     gutterBottom
                 >
-                    
+                    {animation.description}
                 </Typography>
-                <Markdown>{animation.description}</Markdown>
+                
 
                 {animation.speakers.length > 0 && <Card
                     sx={{
