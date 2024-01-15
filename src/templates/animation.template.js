@@ -85,7 +85,7 @@ const AnimationTemplate = ({ pageContext }) => {
             </Fab>
 
             <div className={styles.fabMenu}>
-                <Fab
+                {/* <Fab
                     onClick={() => changeFavorites(animation.identifier)}
                     className={styles.favorite}
                     size="medium"
@@ -101,7 +101,7 @@ const AnimationTemplate = ({ pageContext }) => {
                             <FavoriteBorderOutlined sx={{ mr: 1 }} /> Ajouter
                         </>
                     )}
-                </Fab>
+                </Fab>*/}
                 {visibleShareBtn && (
                     <Fab
                         onClick={() => handleShare(animation)}

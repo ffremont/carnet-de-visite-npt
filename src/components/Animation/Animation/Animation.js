@@ -98,6 +98,9 @@ export const Animation = ({ animation }) => {
                         <Typography variant="h5" gutterBottom>
                         {name}
                     </Typography>   
+                    <Typography variant="body1" className="en-savoir-plus" gutterBottom>
+                       <Link to={`/animations/${slug}`}>En savoir plus</Link>
+                        </Typography>
                     {/*<Typography variant="body1" gutterBottom>
                         {description.length > 60
                             ? description.substr(0, 60) + '...'
@@ -146,7 +149,7 @@ export const Animation = ({ animation }) => {
                         flexDirection: matches ? 'row' : 'colum',
                     }}
                 >
-                    <IconButton
+                  {/*  <IconButton
                         sx={{ flex: 1 }}
                         className={styles.iconButtonMobile}
                         onClick={() => changeFavorites(animation.identifier)}
@@ -158,6 +161,7 @@ export const Animation = ({ animation }) => {
                             <FavoriteBorderOutlined />
                         )}
                     </IconButton>
+                    */} 
 
                     {!!registrationUrl && (
                         <IconButton
@@ -172,7 +176,7 @@ export const Animation = ({ animation }) => {
                         </IconButton>
                     )}
 
-                    <IconButton
+                    {/* <IconButton
                         sx={{ flex: 1 }}
                         className={styles.iconButtonMobile}
                         component={Link}
@@ -180,7 +184,7 @@ export const Animation = ({ animation }) => {
                         aria-label="voir"
                     >
                         <SearchIcon />
-                    </IconButton>
+                    </IconButton>*/}
                 </Box>
             </Box>
         </Paper>

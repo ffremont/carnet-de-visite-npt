@@ -1,0 +1,27 @@
+{
+    "identifier": "11-apec",
+    "slug": "apec",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Apec",
+    "name": "Apec",
+    "logo": "11-apec/logo.png",
+    "image": "11-apec/logo.png",
+    "description": "Qui sommes-nous ?\r\nAssociation pour l'Emploi des Cadres, l'Apec est une association paritaire loi 1901 dont les 3 principales missions d'int\u00E9r\u00EAt g\u00E9n\u00E9ral sont : \u2028- accompagner tout au long de leur vie les cadres salari\u00E9s et demandeurs d'emploi ainsi que les jeunes dipl\u00F4m\u00E9s (\u00E0 partir de bac+3) (recherche d'emploi, projet de reconversion, point sur leur carri\u00E8re, cr\u00E9ation d'entreprise...)\u2028- accompagner les entreprises pour les aider \u00E0 r\u00E9ussir leur recrutement de cadre\u2028- \u00E9clairer, y compris de mani\u00E8re prospective, l\u2019action des acteurs de l\u2019emploi cadre en leur apportant des cl\u00E9s de compr\u00E9hension du march\u00E9 et des mutations du travail, issues de donn\u00E9es, \u00E9tudes et analyses nationales et territoriales.\r\n\r\nServices\r\nPour les cadres salari\u00E9s, demandeurs d'emploi et les jeunes dipl\u00F4m\u00E9s, plusieurs services de conseil individuel et collectif sont propos\u00E9s dans le cadre de notre offre de services :\u2028- Optimiser sa candidature (cv et lettre de motivation)\u2028- Etre accompagn\u00E9 dans sa recherche d'emploi\u2028- Faire le point sur sa carri\u00E8re et changer de voie.",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site APEC",
+            "href": "https://www.apec.fr/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["david-mathis"]
+}

@@ -77,7 +77,7 @@ export const Footer = () => {
                             Intervenant(e)s
                         </Button>
 
-                        <Button
+                       {/*  <Button
                             component={Link}
                             to="/favorites"
                             color="secondary"
@@ -86,7 +86,7 @@ export const Footer = () => {
                             startIcon={<FavoriteIcon />}
                         >
                             Favoris
-                        </Button>
+                        </Button>*/}
                     </Toolbar>
                 </Container>
             </AppBar>
