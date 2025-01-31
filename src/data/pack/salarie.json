@@ -1,0 +1,12 @@
+{
+    "identifier": "salarie",
+    "slug": "salarie",
+    "title": "Je suis salarié",
+    "type": "",
+    "image": "je-m-informe.jpeg",
+    "animations": [
+       "1-spn",
+    "11-apec",
+    "3-transition-pro","5-les-tribus", "7-mission-locale", "9-cap-emploi-79", "10-eni", "6-jume", "8-erip", "14-avenir-actifs-nouvelle-aquitaine"
+    ]
+}

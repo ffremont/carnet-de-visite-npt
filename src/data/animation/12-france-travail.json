@@ -1,0 +1,27 @@
+{
+    "identifier": "12-france-travail",
+    "slug": "france-travail",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "France Travail",
+    "name": "France Travail",
+    "logo": "12-france-travail/logo.png",
+    "image": "12-france-travail/logo.png",
+    "description": "Qui sommes-nous ?\r\n\r\nFrance Travail est le service public de l\u2019emploi en France.\r\nSon r\u00F4le est d\u2019une part d\u2019indemniser les demandeurs d\u2019emploi et les accompagner vers le retour \u00E0 l\u2019emploi ; et d\u2019autre part, guider les entreprises dans leurs recrutements.\r\n\r\nServices : \r\n\r\n> Accompagnement \u00E0 la recherche d'un emploi\r\n> Construction d'un projet professionnel\r\n> Reconversion\/formation\r\n> Projet cr\u00E9ation d'entreprise\r\n> Pr\u00E9paration candidature\r\n> Ateliers et prestations \r\n> Mise en relation avec des entreprises\/Propositions d'offres\r\n...",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site France Travail",
+            "href": "https://www.francetravail.fr"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["fabienne-cottier", "sonia-meudec"]
+}

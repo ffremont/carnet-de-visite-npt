@@ -141,7 +141,7 @@ export const Speaker = ({ speaker }) => {
                         justifyContent: 'center',
                     }}
                 >
-                    <IconButton
+                   {/*  <IconButton
                         onClick={() => changeFavorites(identifier)}
                         sx={{ flex: 1 }}
                         className={styles.iconButtonMobile}
@@ -152,7 +152,7 @@ export const Speaker = ({ speaker }) => {
                         ) : (
                             <FavoriteBorderOutlined />
                         )}
-                    </IconButton>
+                    </IconButton>*/}
                     <IconButton
                         sx={{ flex: 1 }}
                         aria-label="download vCard"

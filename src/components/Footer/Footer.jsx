@@ -1,14 +1,7 @@
 import * as React from 'react'
 import { styled } from '@mui/material/styles'
 import QrIcon from '../../../assets/qr.svg'
-import {
-    AppBar,
-    Box,
-    Button,
-    Fab,
-    Toolbar,
-    useMediaQuery,
-} from '@mui/material'
+import { AppBar, Box, Button, Fab, Toolbar, useMediaQuery } from '@mui/material'
 import HomeIcon from '@mui/icons-material/Home'
 import TocIcon from '@mui/icons-material/Toc'
 import Groups2Icon from '@mui/icons-material/Groups2'
@@ -16,6 +9,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import * as styles from './Footer.module.less'
 import { Container } from '@mui/system'
 import { Link } from 'gatsby'
+import { useEffect } from 'react'
 
 const StyledFab = styled(Fab)({
     position: 'absolute',
@@ -28,38 +22,50 @@ const StyledFab = styled(Fab)({
 
 export const Footer = () => {
     const matches = useMediaQuery((theme) => theme.breakpoints.down('lg'))
+
+   
     return (
-        <AppBar position="fixed" sx={{ top: 'auto', bottom: 0 }}>
-            <Container sx={{padding:0}} maxWidth="lg">
-                <Toolbar className={styles.toolbar}>
-                    <Button
-                        variant="text"
-                        className={styles.button}
-                        component={Link}
-                        to="/"
-                        color="secondary"
-                        startIcon={<HomeIcon />}
-                    >
-                        Accueil
-                    </Button>
+        <>
+           
 
-                    <Button
-                        component={Link}
-                        to="/programmation"
-                        color="secondary"
-                        variant="text"
-                        className={styles.button}
-                        startIcon={<TocIcon />}
-                    >
-                        Programme
-                    </Button>
+            <AppBar position="fixed" sx={{ top: 'auto', bottom: 0 }}>
+                <Container sx={{ padding: 0 }} maxWidth="lg">
+                    <Toolbar className={styles.toolbar}>
+                        <Button
+                            variant="text"
+                            className={styles.button}
+                            component={Link}
+                            to="/"
+                            color="secondary"
+                            startIcon={<HomeIcon />}
+                        >
+                            Accueil
+                        </Button>
 
-                    {matches && <StyledFab component={Link} to="/scan" color="secondary" aria-label="add">
-                        <QrIcon />
-                    </StyledFab>}
+                        <Button
+                            component={Link}
+                            to="/programmation"
+                            color="secondary"
+                            variant="text"
+                            className={styles.button}
+                            startIcon={<TocIcon />}
+                        >
+                            Organismes
+                        </Button>
 
-                    <Box sx={{ flexGrow: 1 }} />
-                   
+                        {matches && (
+                            <StyledFab
+                                component={Link}
+                                to="/scan"
+                                color="secondary"
+                                aria-label="add"
+                            >
+                                <QrIcon />
+                            </StyledFab>
+                        )}
+
+                        <Box sx={{ flexGrow: 1 }} />
+
                         <Button
                             component={Link}
                             to="/speakers"
@@ -70,8 +76,8 @@ export const Footer = () => {
                         >
                             Intervenant(e)s
                         </Button>
-                    
-                        <Button
+
+                       {/*  <Button
                             component={Link}
                             to="/favorites"
                             color="secondary"
@@ -80,10 +86,10 @@ export const Footer = () => {
                             startIcon={<FavoriteIcon />}
                         >
                             Favoris
-                        </Button>
-                   
-                </Toolbar>
-            </Container>
-        </AppBar>
+                        </Button>*/}
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </>
     )
 }

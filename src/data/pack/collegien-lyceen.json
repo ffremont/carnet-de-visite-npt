@@ -1,0 +1,10 @@
+{
+    "identifier": "collegien-lyceen",
+    "slug": "collegien-lyceen",
+    "title": "Je suis collégien ou lycéen",
+    "type": "",
+    "image": "je-m-informe.jpeg",
+    "animations": [
+         "1-spn", "10-eni", "8-erip"
+    ]
+}

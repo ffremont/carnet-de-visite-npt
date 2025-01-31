@@ -5,22 +5,65 @@ html {
 body {
     background-color: transparent !important;
 }
-video{
+
+video {
     object-fit: cover;
 }
 
-.registrationChip{
+.registrationChip {
     background: #e99208;
     color: white;
     font-weight: bold;
-    svg{
+
+    svg {
         color: white !important;
     }
 }
 
-.info-pratique{
+.info-pratique {
     font-family: "Spinnaker", Helvetica, Arial, Lucida, sans-serif;
     margin-bottom: 20px;
     color: #26205e;
     text-align: center;
+}
+
+.modal-window {
+    position: fixed;
+    width: 430px;
+    z-index: 999999;
+    height: 300px;
+    border: 1px solid #c7c6c6;
+    border-radius: 4px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    form{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+dialog::backdrop {
+    background: rgba(107, 105, 105, 0.62);
+}
+video {
+    width:100%;
+}
+
+.info-title-1, .info-title-1 a{
+    color: hsla(11,80%,45%,1);
+    text-decoration-color: hsla(11,80%,45%,1);
+}
+
+.info-title-2{
+    font-size:1.1rem;
+}
+
+.en-savoir-plus a{
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: underline;
 }

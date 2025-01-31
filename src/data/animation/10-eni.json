@@ -1,0 +1,27 @@
+{
+    "identifier": "10-eni",
+    "slug": "eni",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "ENI Ecole Informatique",
+    "name": "ENI Ecole Informatique",
+    "logo": "10-eni/logo.png",
+    "image": "10-eni/logo.png",
+    "description": "Qui sommes-nous ?\r\n\r\nGr\u00E2ce \u00E0 un r\u00E9seau de plus de 20 000 dipl\u00F4m\u00E9s, ENI Ecole Informatique a acquis une renomm\u00E9e nationale dans la formation d'informaticiens. En contact permanent avec les entreprises du num\u00E9rique, l\u2019ENI propose des titres professionnels du niveau 5 (BAC +2) au niveau 7 (BAC +5) dans diff\u00E9rents domaines : le d\u00E9veloppement, le test logiciel, l\u2019administration syst\u00E8me et r\u00E9seau, le support utilisateur, la cybers\u00E9curit\u00E9, l\u2019intelligence artificielle, la data \u2026 \r\nNos formations sont accessibles en pr\u00E9sentiel (Niort, Nantes, Rennes et Quimper) ou \u00E0 distance et en continu ou en alternance (contrat de professionnalisation ou d\u2019apprentissage). Nous accompagnons des jeunes en poursuites d\u2019\u00E9tudes et des profils en reconversion (acad\u00E9mique ou professionnelle). \r\n\r\nServices : \r\n\r\n> Formations dipl\u00F4mantes dans le d\u00E9veloppement, le test logiciel, l\u2019administration syst\u00E8me et r\u00E9seau, le support utilisateur, la cybers\u00E9curit\u00E9, l\u2019intelligence artificielle, la data, DevOps\u2026\r\n> En formation continue, apprentissage\u2026\r\n> Sans frais d'inscription\r\n> Accompagnement pour vous aider dans votre recherche d'entreprise\r\n> Accompagnement tout au long de votre formation",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site ENI",
+            "href": "https://www.eni-ecole.fr/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["margot-bugnot", "thibaut-louis"]
+}

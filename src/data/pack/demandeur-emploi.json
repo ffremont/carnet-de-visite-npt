@@ -1,0 +1,10 @@
+{
+    "identifier": "demandeur-emploi",
+    "slug": "demandeur-emploi",
+    "title": "Je suis demandeur d'emploi",
+    "type": "",
+    "image": "je-m-informe.jpeg",
+    "animations": [
+        "1-spn", "2-atlas","11-apec", "12-france-travail", "5-les-tribus", "7-mission-locale", "9-cap-emploi-79", "10-eni", "13-SNC", "6-jume", "8-erip"
+    ]
+}

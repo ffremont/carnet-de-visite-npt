@@ -1,0 +1,27 @@
+{
+    "identifier": "8-erip",
+    "slug": "erip",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "ERIP Niortais Haut Val de Sèvre",
+    "name": "ERIP Niortais Haut Val de Sèvre",
+    "logo": "8-erip/logo.jpg",
+    "image": "8-erip/logo.jpg",
+    "description": "Qui sommes-nous ?\n\nVous vous interrogez sur votre vie professionnelle ? Vous envisagez une reconversion ?\nQuels que soient votre âge et votre situation, les conseillers de l'ERIP Niortais Haut Val de Sèvre sont à votre écoute ! \nL'ERIP est un lieu d’accueil, d’écoute et d’information, où rencontrer un conseiller en évolution professionnelle pour toute personne qui se pose des questions sur son avenir professionnel. \n\nA l’ERIP, vous rencontrerez un conseiller en évolution professionnelle qui établira d’abord un diagnostic de votre situation.\nL’ERIP a pour objectif de fournir un 1er niveau d’information : le conseiller vous transmettra les informations nécessaires, les supports ainsi que les contacts adaptés pour vous faire accompagner dans votre projet.\n\nServices : \n\n> Conseil en évolution professionnelle\n> Ateliers collectifs (orientation, connaissance du bassin d'emploi, formation, ...)\n> Évènements (forums, jobs dating, ...)",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site ERIP",
+            "href": "https://www.mission-locale-sud79.fr/erip/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["laetitia-gregoire"]
+}
