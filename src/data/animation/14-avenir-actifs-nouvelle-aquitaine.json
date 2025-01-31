@@ -1,0 +1,30 @@
+{
+    "identifier": "14-avenir-actifs-nouvelle-aquitaine",
+    "slug": "avenir-actifs-nouvelle-aquitaine",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Avenir Actifs Nouvelle Aquitaine ",
+    "name": "Avenir Actifs Nouvelle Aquitaine ",
+    "logo": "14-avenir-actifs-nouvelle-aquitaine/logo.png",
+    "image": "14-avenir-actifs-nouvelle-aquitaine/logo.png",
+    "description": "Qui sommes-nous ?\r\n\r\nAvenir Actifs Nouvelle Aquitaine d\u00E9ploie le service public Mon conseil en \u00E9volution professionnelle pour les salari\u00E9s du secteur priv\u00E9 et les travailleurs ind\u00E9pendants en Nouvelle-Aquitaine\r\n\r\nServices : \r\n\r\nMon conseil en \u00E9volution professionnelle (Mon CEP) est le service public d\u2019accompagnement professionnel, gratuit et personnalis\u00E9, des salari\u00E9s de droit priv\u00E9 (hors cadres) et des travailleurs ind\u00E9pendants, mandat\u00E9 par France comp\u00E9tences.\r\n\r\nIl permet \u00E0 tout actif, \u00E0 n\u2019importe quel moment de sa vie, de disposer d\u2019un temps d\u2019\u00E9coute afin de construire, avec un.e conseiller.\u00E8re d\u00E9di\u00E9.e, un projet d\u2019\u00E9volution professionnelle\u202F: faire le point sur son avenir professionnel, valoriser ses comp\u00E9tences, cr\u00E9er ou reprendre une entreprise, d\u00E9couvrir de nouveaux m\u00E9tiers, se former, se reconvertir et bien d\u2019autres accompagnements.\r\nQuelle que soit votre question, votre situation, votre projet d\u2019\u00E9volution professionnelle, n\u2019h\u00E9sitez pas \u00E0 solliciter le service !\r\nVous pouvez aussi consulter l\u2019article Pourquoi faire appel \u00E0 Mon conseil en \u00E9volution professionnelle ?\r\n",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site",
+            "href": " https://na.avenir-actifs.org/"
+        },{
+            "label": "Prendre un rendez-vous sur le département",
+            "href": "tel:0972010203"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["claire-roussillon"]
+}

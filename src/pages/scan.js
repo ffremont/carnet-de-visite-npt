@@ -27,8 +27,9 @@ const Qr = () => {
             <Helmet title="Scan QR | Carnet de visite Numérique pour toutes" />
             <QrScanner
                 onDecode={(result) => {
+                    console.log(result);
                     if (!!result) {
-                        handleScan(result?.text)
+                        handleScan(result)
                     }
                 }}
                 onError={(error) => console.log(error?.message)}

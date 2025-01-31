@@ -72,7 +72,7 @@ const AnimationTemplate = ({ pageContext }) => {
                 <meta property="og:url" content={isBrowser() ? window.location.href: '/'} />
                 <meta
                     property="og:image"
-                    content="/npt-2024.png"
+                    content="/npt-2025.jpg"
                 />
             </Helmet>
             <Fab

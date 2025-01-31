@@ -44,7 +44,7 @@ const IndexPage = () => {
                     property="og:url"
                     content={isBrowser() ? window.location.href : '/'}
                 />
-                <meta property="og:image" content="/npt-2024.png" />
+                <meta property="og:image" content="/npt-2025.jpg" />
 
                 <link
                     rel="stylesheet"

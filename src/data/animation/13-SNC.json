@@ -1,0 +1,27 @@
+{
+    "identifier": "13-SNC",
+    "slug": "snc",
+    "type": "organisme",
+    "floor": 0,
+    "room": "",
+    "organization": "Solidarité Nouvelle Face au Chômage",
+    "name": "Solidarité Nouvelle Face au Chômage",
+    "logo": "13-SNC/logo.png",
+    "image": "13-SNC/logo.png",
+    "description": "Qui sommes-nous ?\r\n\r\nSolidarit\u00E9s nouvelles face au ch\u00F4mage (SNC) est une association loi 1901 qui propose aux chercheurs d'emploi un accompagnement humain et personnalis\u00E9, gr\u00E2ce \u00E0 son r\u00E9seau d'accompagnateurs b\u00E9n\u00E9voles \u00E0 travers toute la France.\r\n\r\nServices : \r\n\r\nSNC d\u00E9ploie ses actions autour de 3 axes :\r\n> L'accompagnement personnalis\u00E9, individuel et dans la dur\u00E9e des chercheurs d\u2019emploi par des bin\u00F4mes de b\u00E9n\u00E9voles.\r\n> La cr\u00E9ation d\u2019emplois solidaires, dans des structures de l\u2019\u00E9conomie sociale et solidaire, pour les personnes dont la recherche d\u2019emploi se prolonge.\r\n> La participation au d\u00E9bat public pour d\u00E9fendre les int\u00E9r\u00EAts des chercheurs d\u2019emplois et lutter contre toute forme de stigmatisation.",
+    "slots": "",
+    "registrationUrl": "",
+    "links": [
+        {
+            "label": "Site SNC",
+            "href": "https://snc.asso.fr/"
+        }
+    ],
+    "documents": [
+        {
+            "label": "Formulaire d'inscription",
+            "href": "none"
+        }
+    ],
+    "speakers": ["marie-laure-manteau", "emmanuelle-valentin-snc"]
+}
